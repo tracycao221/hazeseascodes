@@ -13,7 +13,6 @@ import {
   videoGuides,
   wikiCards
 } from "@/data/site";
-import { AdsterraArticleBottom, AdsterraArticleMid, AdsterraArticleTop } from "@/components/ads";
 import { FaqJsonLd, SoftwareApplicationJsonLd, WebSiteJsonLd } from "@/components/seo/JsonLd";
 import { SectionHeader, TrustNote } from "@/components/ui/content";
 import { BrandHero } from "@/components/home/BrandHero";
@@ -57,8 +56,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-      <AdsterraArticleTop />
-
       <section className="mx-auto max-w-7xl px-4 py-12">
         <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <SectionHeader
@@ -83,8 +80,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-      <AdsterraArticleMid />
-
       <section className="bg-white/[0.025]">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 lg:grid-cols-[0.9fr_1.1fr]">
           <SectionHeader
@@ -106,8 +101,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <AdsterraArticleBottom />
-
       <section className="mx-auto max-w-7xl px-4 py-12">
         <SectionHeader
           eyebrow="Core tools"

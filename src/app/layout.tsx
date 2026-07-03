@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import { AdsterraPopunderGate, AdsterraSmartLink, AdsterraSocialBarGate, AdsterraStickyRail } from "@/components/ads";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { siteConfig } from "@/data/site";
@@ -60,13 +59,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
-        <AdsterraPopunderGate />
-        <AdsterraSocialBarGate />
-        <AdsterraSmartLink />
         <Navbar />
         {children}
-        <AdsterraStickyRail />
         <Footer />
+        <script src="https://pl30188222.effectivecpmnetwork.com/27/a2/7d/27a27d4a1f20318bd649e1951ab83e75.js" />
       </body>
     </html>
   );

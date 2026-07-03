@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { faqs, siteConfig, tierPreview } from "@/data/site";
-import { AdsterraArticleBottom, AdsterraArticleMid, AdsterraArticleTop } from "@/components/ads";
 import { BreadcrumbJsonLd, FaqJsonLd, ItemListJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
@@ -36,8 +35,6 @@ export default function TierListPage() {
         title={`${siteConfig.gameName} Tier List`}
         description="Use this tier list to compare the best current picks, what each pick is good for, and what still needs checking before you spend rare resources."
       />
-      <AdsterraArticleTop />
-
       <section className="mt-8 grid gap-4 lg:grid-cols-3">
         <article className="content-card">
           <span className="mini-label">Checked date</span>
@@ -87,8 +84,6 @@ export default function TierListPage() {
           ))}
         </div>
       </section>
-      <AdsterraArticleMid />
-
       <section className="mt-10 grid gap-4 lg:grid-cols-3">
         <article className="content-card">
           <h3 className="text-lg font-bold text-white">Beginner ranking</h3>
@@ -128,8 +123,6 @@ export default function TierListPage() {
           </Link>
         </div>
       </section>
-      <AdsterraArticleBottom />
-
       <div className="mt-10 flex flex-wrap gap-3">
         <Link href="/codes" className="button-secondary">Get codes</Link>
         <Link href="/calculator" className="button-secondary">Use the calculator</Link>

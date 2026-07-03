@@ -42,9 +42,9 @@ export default function PrivacyPage() {
         <article className="content-card">
           <h2 className="text-xl font-bold text-white">Advertising and third-party cookies</h2>
           <p className="mt-2 leading-7 text-white/68">
-            Advertising partners, including Adsterra when enabled, may use third-party cookies, scripts,
-            pixels, smart links, or similar technology to deliver ads, measure ad performance, limit repeat
-            impressions, detect invalid traffic, and personalize ads where allowed by law.
+            This site does not load advertising scripts at launch. If advertising is added later, this
+            policy should be updated before those scripts go live. Advertising partners may use cookies,
+            scripts, pixels, or similar technology only after that future setup is reviewed.
           </p>
         </article>
 

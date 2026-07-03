@@ -48,8 +48,8 @@ export default function TermsPage() {
           <h2 className="text-xl font-bold text-white">Third-party services and advertising</h2>
           <p className="mt-2 leading-7 text-white/68">
             The site may link to or embed third-party services such as Roblox, Discord, Trello, YouTube,
-            Google Analytics, and advertising partners including Adsterra. Those services operate under
-            their own terms and privacy policies.
+            analytics providers, or advertising partners if they are added later. Those services operate
+            under their own terms and privacy policies.
           </p>
         </article>
 

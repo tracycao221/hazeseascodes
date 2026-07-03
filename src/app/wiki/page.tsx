@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig, wikiCards } from "@/data/site";
-import { AdsterraArticleBottom, AdsterraArticleTop } from "@/components/ads";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
@@ -21,8 +20,6 @@ export default function WikiPage() {
         title={`${siteConfig.gameName} Wiki`}
         description="Use this hub for game systems, items, maps, rewards, builds, and other details that help players decide what to do next."
       />
-      <AdsterraArticleTop />
-
       <section className="mt-10">
         <SectionHeader
           eyebrow="Game topics"
@@ -39,7 +36,6 @@ export default function WikiPage() {
           ))}
         </div>
       </section>
-      <AdsterraArticleBottom />
     </main>
   );
 }

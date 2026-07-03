@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { guideClusters, siteConfig } from "@/data/site";
-import { AdsterraArticleBottom, AdsterraArticleTop } from "@/components/ads";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
@@ -21,8 +20,6 @@ export default function GuidesPage() {
         title={`${siteConfig.gameName} Guides`}
         description="Use this hub for beginner help, farming routes, boss prep, event notes, and advanced strategy."
       />
-      <AdsterraArticleTop />
-
       <section className="mt-10">
         <SectionHeader
           eyebrow="Recommended guides"
@@ -39,7 +36,6 @@ export default function GuidesPage() {
           ))}
         </div>
       </section>
-      <AdsterraArticleBottom />
     </main>
   );
 }

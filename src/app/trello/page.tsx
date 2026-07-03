@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { gameConfig } from "@/data/game.config";
 import { siteConfig } from "@/data/site";
-import { AdsterraArticleBottom, AdsterraArticleMid, AdsterraArticleTop } from "@/components/ads";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
@@ -61,8 +60,6 @@ export default function TrelloStatusPage() {
         title={`${siteConfig.gameName} Trello, Discord & Wiki Status`}
         description={`Use this page to check which ${siteConfig.gameName} community sources are official, which still need verification, and where to confirm codes, updates, and tier-list changes.`}
       />
-      <AdsterraArticleTop />
-
       <section className="mt-10">
         <SectionHeader
           eyebrow="Official links"
@@ -101,8 +98,6 @@ export default function TrelloStatusPage() {
           })}
         </div>
       </section>
-      <AdsterraArticleMid />
-
       <section className="mt-10 grid gap-4 md:grid-cols-3">
         <Link href="/codes" className="content-card">
           <span className="mini-label">Freshness</span>
@@ -120,7 +115,6 @@ export default function TrelloStatusPage() {
           <p className="mt-2 text-sm leading-6 text-white/65">Keep official, community, video, Reddit, and guide-site evidence separated so updates stay auditable.</p>
         </Link>
       </section>
-      <AdsterraArticleBottom />
     </main>
   );
 }

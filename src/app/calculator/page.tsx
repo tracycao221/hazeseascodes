@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { CalculatorTool } from "@/components/tools/CalculatorTool";
 import { faqs, siteConfig } from "@/data/site";
-import { AdsterraToolAd } from "@/components/ads";
 import { BreadcrumbJsonLd, FaqJsonLd, SoftwareApplicationJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro } from "@/components/ui/content";
 
@@ -26,7 +25,6 @@ export default function CalculatorPage() {
       <section className="mt-10">
         <CalculatorTool />
       </section>
-      <AdsterraToolAd />
     </main>
   );
 }

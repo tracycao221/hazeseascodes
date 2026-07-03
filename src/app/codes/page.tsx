@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { activeCodes, faqs, siteConfig } from "@/data/site";
-import { AdsterraArticleBottom, AdsterraArticleMid, AdsterraArticleTop } from "@/components/ads";
 import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
@@ -34,8 +33,6 @@ export default function CodesPage() {
         title={`${siteConfig.gameName} Codes`}
         description="Use this page as the canonical codes surface. Replace placeholder rewards with verified codes from official and trusted community sources before launch."
       />
-      <AdsterraArticleTop />
-
       <section className="mt-10">
         <SectionHeader
           eyebrow="Active list"
@@ -55,8 +52,6 @@ export default function CodesPage() {
           ))}
         </div>
       </section>
-      <AdsterraArticleMid />
-
       <section className="mt-10 grid gap-4 lg:grid-cols-2">
         <article className="content-card">
           <SectionHeader
@@ -79,7 +74,6 @@ export default function CodesPage() {
           />
         </article>
       </section>
-      <AdsterraArticleBottom />
     </main>
   );
 }
