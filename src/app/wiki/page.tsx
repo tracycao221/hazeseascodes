@@ -7,7 +7,19 @@ import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 export const metadata: Metadata = {
   title: `${siteConfig.gameName} Wiki`,
   description: `${siteConfig.gameName} wiki hub for items, maps, systems, builds, rewards, and Roblox game entities.`,
-  alternates: { canonical: `${siteConfig.domain}/wiki` }
+  alternates: { canonical: `${siteConfig.domain}/wiki` },
+  openGraph: {
+    title: `${siteConfig.gameName} Wiki`,
+    description: `${siteConfig.gameName} materials, NPC locations, sea events, fruits, and systems wiki hub.`,
+    url: `${siteConfig.domain}/wiki`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.gameName} Wiki`,
+    description: `${siteConfig.gameName} materials, NPC locations, sea events, fruits, and systems wiki hub.`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  }
 };
 
 export default function WikiPage() {
@@ -35,6 +47,24 @@ export default function WikiPage() {
             </Link>
           ))}
         </div>
+      </section>
+      <section className="mt-10 grid gap-4 lg:grid-cols-2">
+        <article className="content-card">
+          <h2 className="text-2xl font-bold text-white">Haze Seas materials</h2>
+          <p className="mt-3 text-sm leading-6 text-white/68">Materials is a valid long-tail route family from current public guide coverage. This hub now keeps the exact phrase visible while deeper materials pages wait for cleaner item-by-item evidence.</p>
+        </article>
+        <article className="content-card">
+          <h2 className="text-2xl font-bold text-white">Haze Seas NPC locations</h2>
+          <p className="mt-3 text-sm leading-6 text-white/68">NPC location searches are active in current YouTube and guide coverage. Use this hub to keep the term discoverable until exact per-island NPC pages are justified.</p>
+        </article>
+        <article className="content-card">
+          <h2 className="text-2xl font-bold text-white">Haze Seas sea events and bosses</h2>
+          <p className="mt-3 text-sm leading-6 text-white/68">Sea events, bosses, and accessories appear together in current public coverage. The exact phrase cluster stays mapped here while route splitting remains under source review.</p>
+        </article>
+        <article className="content-card">
+          <h2 className="text-2xl font-bold text-white">Haze Seas fruit list</h2>
+          <p className="mt-3 text-sm leading-6 text-white/68">The official Roblox description currently lists 34 fruits, including Leopard, Dragon, Dough, Buddha, Mammoth, Venom, and Phoenix. Use the tier-list page for ranking signals and this hub for entity expansion planning.</p>
+        </article>
       </section>
     </main>
   );

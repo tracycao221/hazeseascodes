@@ -28,25 +28,31 @@ const statusRows = [
     label: "Official Roblox page",
     href: gameConfig.dataSources.officialGameUrl,
     status: "Primary source",
-    note: "Use this for the game title, creator, Roblox availability, badges, and public update text."
+    note: "Verified on 2026-07-04 for the live game title, creator group, update timestamp, and public game description."
+  },
+  {
+    label: "Haze Studios Roblox group",
+    href: "https://www.roblox.com/communities/6602131",
+    status: "Verified official identity",
+    note: "Use the creator group as the ownership checkpoint when other surfaces disagree."
   },
   {
     label: "Discord",
     href: gameConfig.dataSources.discord ?? "#",
-    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Candidate source" : "Needs verification",
-    note: "Use creator-owned Discord announcements when available. Avoid reposting unverified community rumors as facts."
+    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Source-reported official invite" : "Needs verification",
+    note: "Current code and Trello guides point to this invite as the official server, but this run did not extract the invite directly from a Roblox-owned surface."
   },
   {
     label: "Trello",
     href: gameConfig.dataSources.trello ?? "#",
-    status: gameConfig.dataSources.trello && gameConfig.dataSources.trello !== "#" ? "Candidate source" : "No official board verified",
-    note: "Many Roblox players search for a Trello board even when the game does not publish one. Keep the status honest."
+    status: gameConfig.dataSources.trello && gameConfig.dataSources.trello !== "#" ? "Verified public board" : "No official board verified",
+    note: "Public Trello JSON confirms the Haze Seas Official Trello board is live and public as of 2026-07-04."
   },
   {
     label: "Wiki",
     href: "/wiki",
-    status: "Site hub",
-    note: "Use the wiki hub for source-backed entities, mechanics, rewards, and guide links after research confirms them."
+    status: "Community and site hub only",
+    note: "No separate creator-confirmed official wiki was verified in this run. Treat fandom or other wiki copies as community sources unless a creator-owned confirmation appears."
   }
 ];
 
@@ -64,7 +70,7 @@ export default function TrelloStatusPage() {
         <SectionHeader
           eyebrow="Official links"
           title="Source status"
-          copy="This page should be updated after research confirms the creator-owned links. Until then, uncertain links stay clearly labelled."
+          copy="This page was refreshed on 2026-07-04. Verified links are separated from source-reported links so players can see what is official, what is public but indirect, and what is still unverified."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {statusRows.map((item) => {

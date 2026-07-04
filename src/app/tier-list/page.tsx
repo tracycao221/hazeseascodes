@@ -33,7 +33,7 @@ export default function TierListPage() {
       <PageIntro
         eyebrow="Tier list"
         title={`${siteConfig.gameName} Tier List`}
-        description="Use this tier list to compare the best current picks, what each pick is good for, and what still needs checking before you spend rare resources."
+        description="Use this page as a source-backed Haze Seas fruit tier list watch page. The current top picks come from repeated public creator and guide coverage, not from official developer balance notes."
       />
       <section className="mt-8 grid gap-4 lg:grid-cols-3">
         <article className="content-card">
@@ -57,7 +57,7 @@ export default function TierListPage() {
         <SectionHeader
           eyebrow="Rankings"
           title="Best current picks"
-          copy="Compare strong beginner, farming, team-combo, and late-game options with clear notes about when each pick is useful."
+          copy="Compare repeated public rankings with clear notes about where certainty is still weak. Exact ordering should be treated as provisional until stronger direct evidence appears."
         />
         <div className="mt-6 grid gap-4">
           {tierPreview.map((item) => (
@@ -86,16 +86,16 @@ export default function TierListPage() {
       </section>
       <section className="mt-10 grid gap-4 lg:grid-cols-3">
         <article className="content-card">
-          <h3 className="text-lg font-bold text-white">Beginner ranking</h3>
-          <p className="mt-2 text-sm leading-6 text-white/66">Rank easy, safe, low-investment options for first-session players.</p>
+          <h3 className="text-lg font-bold text-white">Haze Seas best fruits</h3>
+          <p className="mt-2 text-sm leading-6 text-white/66">Current public demand is concentrated on the Haze Seas best fruits query family, so this page keeps fruit-led rankings visible even while exact meta ordering stays provisional.</p>
         </article>
         <article className="content-card">
-          <h3 className="text-lg font-bold text-white">Farming ranking</h3>
-          <p className="mt-2 text-sm leading-6 text-white/66">Rank options by repeatable grind speed, income, survivability, or mission value.</p>
+          <h3 className="text-lg font-bold text-white">Haze Seas race tier list</h3>
+          <p className="mt-2 text-sm leading-6 text-white/66">Race tier list intent is visible in search demand, but this run keeps it on a source-watch basis until enough current public evidence supports a separate ranking block.</p>
         </article>
         <article className="content-card">
-          <h3 className="text-lg font-bold text-white">Endgame ranking</h3>
-          <p className="mt-2 text-sm leading-6 text-white/66">Rank the best late-game builds after unlock cost and skill ceiling are clear.</p>
+          <h3 className="text-lg font-bold text-white">Haze Seas sword tier list and fighting style tier list</h3>
+          <p className="mt-2 text-sm leading-6 text-white/66">Sword tier list and fighting style tier list queries are recorded, but they remain support-status intents until stronger route-ready evidence appears.</p>
         </article>
       </section>
 

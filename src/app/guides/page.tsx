@@ -7,7 +7,19 @@ import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 export const metadata: Metadata = {
   title: `${siteConfig.gameName} Guides`,
   description: `Beginner, progression, and advanced strategy guides for ${siteConfig.gameName}.`,
-  alternates: { canonical: `${siteConfig.domain}/guides` }
+  alternates: { canonical: `${siteConfig.domain}/guides` },
+  openGraph: {
+    title: `${siteConfig.gameName} Guides`,
+    description: `Beginner, progression, Haki, sea events, and route-planning guides for ${siteConfig.gameName}.`,
+    url: `${siteConfig.domain}/guides`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.gameName} Guides`,
+    description: `Beginner, progression, Haki, sea events, and route-planning guides for ${siteConfig.gameName}.`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  }
 };
 
 export default function GuidesPage() {
@@ -35,6 +47,24 @@ export default function GuidesPage() {
             </Link>
           ))}
         </div>
+      </section>
+      <section className="mt-10 grid gap-4 lg:grid-cols-2">
+        <article className="content-card">
+          <h2 className="text-2xl font-bold text-white">Haze Seas beginner guide</h2>
+          <p className="mt-3 text-sm leading-6 text-white/68">Beginner-guide demand is still strong. Start on the official Roblox page, claim consensus codes first, then use the wiki and tier-list pages before committing rare fruit or upgrade resources.</p>
+        </article>
+        <article className="content-card">
+          <h2 className="text-2xl font-bold text-white">Haze Seas fruit spawn time and VIP server fruit spawns</h2>
+          <p className="mt-3 text-sm leading-6 text-white/68">The official Roblox game description currently says fruits spawn every 60 minutes, despawn after 20 minutes, and also spawn in VIP servers with a five-fruit limit. Treat that Roblox description as the source of record unless a newer official update replaces it.</p>
+        </article>
+        <article className="content-card">
+          <h2 className="text-2xl font-bold text-white">Haze Seas Haki guide and Conqueror Haki watch</h2>
+          <p className="mt-3 text-sm leading-6 text-white/68">Public Haki demand is real, but exact unlock steps still need careful route-by-route verification. The official Roblox description currently says D Clan gives Conq Haki, so keep broader Haki advice separate from confirmed clan-linked benefits.</p>
+        </article>
+        <article className="content-card">
+          <h2 className="text-2xl font-bold text-white">Haze Seas sea events and NPC locations</h2>
+          <p className="mt-3 text-sm leading-6 text-white/68">Recent YouTube and guide coverage repeatedly surfaces sea events and NPC locations as active intent clusters. This run keeps those phrases visible here and on the wiki hub while deeper page splits remain under evidence review.</p>
+        </article>
       </section>
     </main>
   );

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { siteConfig } from "@/data/site";
@@ -62,7 +63,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Navbar />
         {children}
         <Footer />
-        <script src="https://pl30188222.effectivecpmnetwork.com/27/a2/7d/27a27d4a1f20318bd649e1951ab83e75.js" />
+        <Script
+          src="https://pl30188222.effectivecpmnetwork.com/27/a2/7d/27a27d4a1f20318bd649e1951ab83e75.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

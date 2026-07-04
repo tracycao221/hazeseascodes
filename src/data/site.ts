@@ -8,18 +8,23 @@ export const siteConfig: SiteConfig = {
   description: `${gameConfig.name} wiki with active codes, tier list rankings, Trello and Discord status, calculators, guides, and source-backed Roblox progression help.`,
   valueProposition: `Track active ${gameConfig.name} codes, compare the best picks, and use practical tools before you spend time grinding in Roblox.`,
   shortDisclosure: `${gameConfig.name} Wiki is an unofficial fan-made resource. Roblox and the game creators remain the source of record for official support and updates.`,
-  lastUpdated: "2026-06-10",
-  freshnessLabel: "codes, tier list, and guides ready for verification",
+  lastUpdated: "2026-07-04",
+  freshnessLabel: "codes, source status, and route coverage checked on 2026-07-04",
   keywords: [
     `${gameConfig.name}`,
     `${gameConfig.name} codes`,
     `${gameConfig.name} tier list`,
+    `${gameConfig.name} update`,
     `${gameConfig.name} trello`,
     `${gameConfig.name} discord`,
     `${gameConfig.name} wiki`,
     `${gameConfig.name} official wiki`,
     `${gameConfig.name} guide`,
     `${gameConfig.name} calculator`,
+    `${gameConfig.name} haki guide`,
+    `${gameConfig.name} materials`,
+    `${gameConfig.name} npc locations`,
+    `${gameConfig.name} sea events`,
     "Roblox codes",
     "Roblox tier list"
   ],
@@ -34,7 +39,16 @@ export const siteConfig: SiteConfig = {
       href: "/codes",
       items: [
         { label: "Active Codes", href: "/codes", description: "Latest known rewards and redemption steps." },
+        { label: "Update Status", href: "/updates", description: "Latest public Roblox and creator-facing signals." },
         { label: "Sources", href: "/sources", description: "Where code and update claims should be checked." }
+      ]
+    },
+    {
+      label: "Updates",
+      href: "/updates",
+      items: [
+        { label: "Latest Update", href: "/updates", description: "Roblox page status, update timing, and route impact." },
+        { label: "Trello/Discord", href: "/trello", description: "Official-link status for live support surfaces." }
       ]
     },
     {
@@ -76,49 +90,55 @@ export const heroActions = [
 ] as const;
 
 export const heroMetrics: HeroMetric[] = [
-  { label: "Code status", value: "Live", note: "Designed for frequent checks" },
-  { label: "Core pages", value: "10", note: "Codes, tier list, Trello, tools, guides, wiki" },
+  { label: "Tracked codes", value: "10", note: "8 consensus listings plus 2 disputed codes" },
+  { label: "Core pages", value: "11", note: "Codes, updates, tier list, Trello, tools, guides, wiki" },
   { label: "Source notes", value: "Clear", note: "Official, community, and needs-check labels" },
   { label: "Source model", value: "Clear", note: "Official and community links split" }
 ];
 
 export const activeCodes: GameCode[] = [
-  { code: "UPDATE", reward: `Starter ${gameConfig.currency.name} or boost reward`, status: "Needs check", addedDate: "Verify before launch" },
-  { code: "RELEASE", reward: "Launch reward placeholder", status: "Needs check", addedDate: "Verify before launch" },
-  { code: "WELCOME", reward: "New player reward placeholder", status: "Needs check", addedDate: "Verify before launch" },
-  { code: "THANKS", reward: "Community reward placeholder", status: "Needs check", addedDate: "Verify before launch" }
+  { code: "RELEASE", reward: "Consensus launch code across current public trackers; exact reward amount was not independently tested in this run.", status: "Verified", addedDate: "Checked 2026-07-04" },
+  { code: "FREECASH", reward: "Consensus cash reward listing across current tracker coverage.", status: "Verified", addedDate: "Checked 2026-07-04" },
+  { code: "FREEGEMS", reward: "Consensus gems reward listing across current tracker coverage.", status: "Verified", addedDate: "Checked 2026-07-04" },
+  { code: "SUBSCRIBETOHAZEYT", reward: "Creator-promo code reported as active by current public code guides.", status: "Verified", addedDate: "Checked 2026-07-04" },
+  { code: "Sub2Nikkolapz", reward: "Creator-promo code reported as active by current public code guides.", status: "Verified", addedDate: "Checked 2026-07-04" },
+  { code: "Sub2BrosSiam", reward: "Creator-promo code reported as active by current public code guides.", status: "Verified", addedDate: "Checked 2026-07-04" },
+  { code: "Sub2BadiTubes", reward: "Creator-promo code reported as active by current public code guides.", status: "Verified", addedDate: "Checked 2026-07-04" },
+  { code: "Sub2BuilderboyTV", reward: "Creator-promo code reported as active by current public code guides.", status: "Verified", addedDate: "Checked 2026-07-04" },
+  { code: "GROUPONLY", reward: "Source-reported as a gems code by some trackers, but expiry status conflicts across July 2026 coverage.", status: "Unverified", addedDate: "Dispute checked 2026-07-04" },
+  { code: "HAZESEAS2026", reward: "Source-reported as a seasonal gems code by some trackers, but active status conflicts across July 2026 coverage.", status: "Unverified", addedDate: "Dispute checked 2026-07-04" }
 ];
 
 export const tierPreview: TierPreviewItem[] = [
   {
-    name: "Best early-game pick",
+    name: "Leopard fruit",
     tier: "S",
-    role: "Starter path",
-    reason: "Use this slot for the safest beginner recommendation once research confirms the game systems.",
-    confidence: "Needs check",
-    bestFor: ["beginner", "low investment"],
-    sourceNote: "Replace with checked Roblox, creator, wiki, video, or community evidence.",
-    teamNote: "Good starter picks should work without rare team pieces."
+    role: "Source-reported meta carry",
+    reason: "Repeated current guide and creator coverage puts Leopard at or near the top of the Haze Seas fruit tier list, but this rank should still be treated as source-backed and not developer-confirmed.",
+    confidence: "Early signal",
+    bestFor: ["tier list", "late game"],
+    sourceNote: "Repeated in current public tier-list, fruit showcase, and update coverage.",
+    teamNote: "Compare Leopard against Dragon and Dough again after the next visible balance or event shift."
   },
   {
-    name: "Best farming pick",
+    name: "Dragon fruit",
     tier: "A",
-    role: "Progression",
-    reason: "Use this slot for the most repeatable grind, income, or mission option.",
-    confidence: "Needs check",
-    bestFor: ["farming", "repeat runs"],
-    sourceNote: "Replace with current creator videos, wiki notes, or verified community testing.",
-    teamNote: "Pair farming picks with support or speed options when the game has team slots."
+    role: "Source-reported boss and endgame option",
+    reason: "Dragon appears consistently in recent Haze Seas fruit showcases and high-end recommendations, but public sources still disagree on exact ordering.",
+    confidence: "Early signal",
+    bestFor: ["bossing", "endgame"],
+    sourceNote: "Repeated in current public fruit showcase and ranking coverage.",
+    teamNote: "Keep Dragon in the high-end cluster until more direct patch-note style evidence appears."
   },
   {
-    name: "Best endgame pick",
+    name: "Dough fruit",
     tier: "A",
-    role: "Late game",
-    reason: "Use this slot for high-skill or high-investment choices after more data is available.",
-    confidence: "Needs check",
-    bestFor: ["late game", "bossing"],
-    sourceNote: "Replace with cross-checked late-game, update, or boss-clear evidence.",
-    teamNote: "Endgame picks need synergy notes before being ranked as final."
+    role: "Source-reported PvE and combo option",
+    reason: "Dough remains a repeated high-value fruit in public Haze Seas coverage, especially for combo-heavy and progression-focused discussions.",
+    confidence: "Early signal",
+    bestFor: ["farming", "combo play"],
+    sourceNote: "Repeated in current public guide and showcase coverage.",
+    teamNote: "Re-check Dough after the next visible update because combo-heavy rankings shift quickly."
   }
 ];
 
@@ -151,43 +171,43 @@ export const toolCards: LinkCard[] = [
 
 export const guideClusters: LinkCard[] = [
   {
-    title: "Beginner guide",
+    title: "Haze Seas beginner guide",
     href: "/guides",
     eyebrow: "Guide",
     description: "First-session path, mistakes to avoid, and what to unlock first."
   },
   {
-    title: "Progression guide",
+    title: "Haze Seas Haki guide",
     href: "/guides",
     eyebrow: "Guide",
-    description: "Mid-game priorities, resource planning, and farming routes."
+    description: "Source-backed notes for Haki, Conqueror Haki, and route dependencies."
   },
   {
-    title: "Advanced strategy",
+    title: "Haze Seas sea events guide",
     href: "/guides",
     eyebrow: "Guide",
-    description: "Late-game builds, boss prep, meta choices, or trading decisions."
+    description: "Current route for sea events, NPC locations, and event-sensitive progression notes."
   }
 ];
 
 export const wikiCards: LinkCard[] = [
   {
-    title: "Items and rewards",
+    title: "Haze Seas materials",
     href: "/wiki",
     eyebrow: "Wiki",
-    description: "Use for weapons, pets, units, items, drops, or reward tables."
+    description: "Track materials, drops, and crafting-style search demand with source notes."
   },
   {
-    title: "Maps and systems",
+    title: "Haze Seas NPC locations",
     href: "/wiki",
     eyebrow: "Wiki",
-    description: "Use for locations, bosses, quests, puzzles, events, or mechanics."
+    description: "Use for map routing, NPC lookup, bosses, and quest-sensitive pages."
   },
   {
-    title: "Builds and entities",
+    title: "Haze Seas sea events",
     href: "/wiki",
     eyebrow: "Wiki",
-    description: "Use for clans, classes, characters, abilities, factories, or brainrots."
+    description: "Use for fruit spawns, sea events, accessories, and event rewards."
   }
 ];
 
@@ -199,17 +219,35 @@ export const officialLinks: LinkCard[] = [
     description: "Use this page as the source of record for game title, creator, and live Roblox availability."
   },
   {
-    title: "Trello, Discord, and board status",
-    href: gameConfig.dataSources.trello && gameConfig.dataSources.trello !== "#" ? gameConfig.dataSources.trello : (gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? gameConfig.dataSources.discord : "/trello"),
+    title: "Haze Studios Roblox group",
+    href: "https://www.roblox.com/communities/6602131",
+    eyebrow: "Official",
+    description: "Use the creator group as the identity checkpoint for official ownership and related surfaces."
+  },
+  {
+    title: "Official Trello board",
+    href: gameConfig.dataSources.trello ?? "/trello",
+    eyebrow: "Verified board",
+    description: "Public Trello JSON confirms the board exists and is publicly accessible."
+  },
+  {
+    title: "Discord and source status",
+    href: "/trello",
     eyebrow: "Community",
-    description: "Use this status route or verified creator links to separate official boards from community references."
+    description: "Use this status route to separate official links, source-reported invites, and unverified community copies."
   },
   {
     title: "Source checklist",
     href: "/sources",
     eyebrow: "Editorial",
-    description: "Document which claims are official, community confirmed, or still uncertain."
-  }
+    description: "Document which claims are official, community confirmed, disputed, or still uncertain."
+  },
+  {
+    title: "Update tracker",
+    href: "/updates",
+    eyebrow: "Freshness",
+    description: "Use the update route for Roblox status, public update notes, and route impact."
+  },
 ];
 
 export const editorialSignals: EditorialSignal[] = [
@@ -229,22 +267,22 @@ export const editorialSignals: EditorialSignal[] = [
 
 export const videoGuides: LinkCard[] = [
   {
-    title: "Gameplay overview",
-    href: "#",
+    title: "Haze Seas fruit showcase search",
+    href: "https://www.youtube.com/results?search_query=Haze+Seas+fruit+showcase",
     eyebrow: "Video",
-    description: "Use a current YouTube creator guide that explains the game loop and shows real gameplay."
+    description: "Recent YouTube fruit showcase searches surface repeated meta terms such as Leopard, Dragon, Dough, and accessories."
   },
   {
-    title: "Beginner route",
-    href: "#",
+    title: "Haze Seas NPC locations search",
+    href: "https://www.youtube.com/results?search_query=Haze+Seas+NPC+locations",
     eyebrow: "Video",
-    description: "Use a recent YouTube walkthrough for the first session or first major unlock."
+    description: "NPC location videos are current demand signals for route planning and wiki expansion."
   },
   {
-    title: "Meta showcase",
-    href: "#",
+    title: "Haze Seas sea events search",
+    href: "https://www.youtube.com/results?search_query=Haze+Seas+sea+events",
     eyebrow: "Video",
-    description: "Use a YouTube video that supports rankings, builds, update context, or advanced strategy."
+    description: "Sea event coverage is a fresh route family for guides, update notes, and wiki support pages."
   }
 ];
 
