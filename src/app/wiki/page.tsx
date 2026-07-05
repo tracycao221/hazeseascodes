@@ -62,8 +62,16 @@ export default function WikiPage() {
           <p className="mt-3 text-sm leading-6 text-white/68">Sea events, bosses, and accessories appear together in current public coverage. The exact phrase cluster stays mapped here while route splitting remains under source review.</p>
         </article>
         <article className="content-card">
+          <h2 className="text-2xl font-bold text-white">Haze Seas Sea 3 locations and Wandering Merchant</h2>
+          <p className="mt-3 text-sm leading-6 text-white/68">The public official Trello board checked in this run shows Sea 3 location lists and a Wandering Merchant card with a reported 1H30M to 2H30M spawn window plus a 7-minute stay. Keep those details labeled as public-board guidance until a stronger official route guide appears.</p>
+        </article>
+        <article className="content-card">
           <h2 className="text-2xl font-bold text-white">Haze Seas fruit list</h2>
           <p className="mt-3 text-sm leading-6 text-white/68">The official Roblox description currently lists 35 fruits, including Okuchi, Wolf, Leopard, Dragon, Dough, Buddha, Mammoth, Venom, and Phoenix. Use the tier-list page for ranking signals and this hub for entity expansion planning.</p>
+        </article>
+        <article className="content-card">
+          <h2 className="text-2xl font-bold text-white">Haze Seas Okuchi and dragon skins</h2>
+          <p className="mt-3 text-sm leading-6 text-white/68">Current public Trello cards make Okuchi, Okuchi Full Form, Dragon, Dragon Full Form, and Dragon skins visible entity-watch terms. This hub records the names and source surface without claiming final tier rankings, costs, or drop rates that were not verified here.</p>
         </article>
       </section>
     </main>

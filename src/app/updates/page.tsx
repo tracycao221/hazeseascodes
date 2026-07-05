@@ -31,12 +31,12 @@ const statusCards = [
   },
   {
     label: "Current player count snapshot",
-    value: "16,879 playing",
+    value: "16,676 playing",
     note: "Roblox public metadata snapshot captured during this run."
   },
   {
     label: "Visit count snapshot",
-    value: "243,645,047 visits",
+    value: "243,835,656 visits",
     note: "Roblox public metadata snapshot captured during this run."
   },
   {
@@ -99,13 +99,18 @@ export default function UpdatesPage() {
           </Link>
           <Link href="/wiki" className="content-card">
             <span className="mini-label">Wiki cluster</span>
-            <h2 className="mt-3 text-xl font-bold text-white">Haze Seas materials and NPC locations</h2>
-            <p className="mt-2 text-sm leading-6 text-white/65">The wiki hub now exposes materials, NPC locations, sea events, bosses, and fruit-list phrases in exported HTML.</p>
+            <h2 className="mt-3 text-xl font-bold text-white">Sea 3 locations, Wandering Merchant, and dragon skins</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">Current public Trello activity keeps surfacing Sea 3 locations, Wandering Merchant timing, dragon skins, and Okuchi-related entity checks as live wiki-watch terms.</p>
           </Link>
           <Link href="/codes" className="content-card">
             <span className="mini-label">Codes cluster</span>
             <h2 className="mt-3 text-xl font-bold text-white">Official-board codes plus disputed guide-only claims</h2>
             <p className="mt-2 text-sm leading-6 text-white/65">The codes page now separates public official-board listings such as HAZESEAS2026 and OKUCHI from disputed guide-only claims like GROUPONLY.</p>
+          </Link>
+          <Link href="/tier-list" className="content-card">
+            <span className="mini-label">Tier watch</span>
+            <h2 className="mt-3 text-xl font-bold text-white">Okuchi and Dragon full-form watch</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">Fresh public board activity exposes Okuchi and Dragon full-form entity cards, but this run still keeps them on a source-watch basis instead of forcing new rankings.</p>
           </Link>
           <Link href="/trello" className="content-card">
             <span className="mini-label">Source status</span>

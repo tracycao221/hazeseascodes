@@ -25,6 +25,10 @@ export const siteConfig: SiteConfig = {
     `${gameConfig.name} materials`,
     `${gameConfig.name} npc locations`,
     `${gameConfig.name} sea events`,
+    `${gameConfig.name} sea 3 locations`,
+    `${gameConfig.name} wandering merchant`,
+    `${gameConfig.name} dragon skins`,
+    `${gameConfig.name} okuchi`,
     "Roblox codes",
     "Roblox tier list"
   ],
@@ -208,10 +212,16 @@ export const wikiCards: LinkCard[] = [
     description: "Use for map routing, NPC lookup, bosses, and quest-sensitive pages."
   },
   {
-    title: "Haze Seas sea events",
+    title: "Haze Seas Sea 3 locations",
     href: "/wiki",
     eyebrow: "Wiki",
-    description: "Use for fruit spawns, sea events, accessories, and event rewards."
+    description: "Public Trello cards now make Sea 3 location checks and merchant routing part of the live wiki watch."
+  },
+  {
+    title: "Haze Seas Okuchi and dragon skins",
+    href: "/wiki",
+    eyebrow: "Wiki",
+    description: "Track newly visible entity names and cosmetics without pretending ranking or drop-rate details are final."
   }
 ];
 

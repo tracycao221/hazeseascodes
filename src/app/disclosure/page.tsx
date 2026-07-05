@@ -28,9 +28,9 @@ export default function DisclosurePage() {
         <article className="content-card">
           <h2 className="text-xl font-bold text-white">Advertising and sponsored links</h2>
           <p className="mt-2 leading-7 text-white/68">
-            This site may show advertising, smart links, sponsored links, or affiliate-style placements
-            when monetization is enabled. Ads do not change the source standard for codes, rankings,
-            wiki notes, or correction decisions.
+            This site may show advertising, smart links, sponsored links, or affiliate-style placements,
+            including currently configured third-party ad scripts. Ads do not change the source standard
+            for codes, rankings, wiki notes, or correction decisions.
           </p>
         </article>
 

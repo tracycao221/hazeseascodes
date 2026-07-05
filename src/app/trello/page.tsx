@@ -46,7 +46,7 @@ const statusRows = [
     label: "Trello",
     href: gameConfig.dataSources.trello ?? "#",
     status: gameConfig.dataSources.trello && gameConfig.dataSources.trello !== "#" ? "Verified public board" : "No official board verified",
-    note: "Public Trello JSON confirms the Haze Seas Official Trello board is live and public as of 2026-07-05, with codes, sea events, devil fruits, swords, and fighting styles cards."
+    note: "Public Trello JSON confirms the Haze Seas Official Trello board is live and public as of 2026-07-05, with codes, Sea 3 locations, materials, dragon-skin, and entity cards visible in the current board surface."
   },
   {
     label: "Wiki",

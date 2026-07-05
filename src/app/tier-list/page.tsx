@@ -90,6 +90,10 @@ export default function TierListPage() {
           <p className="mt-2 text-sm leading-6 text-white/66">Current public demand is concentrated on the Haze Seas best fruits query family, so this page keeps fruit-led rankings visible even while exact meta ordering stays provisional.</p>
         </article>
         <article className="content-card">
+          <h3 className="text-lg font-bold text-white">Haze Seas Okuchi watch</h3>
+          <p className="mt-2 text-sm leading-6 text-white/66">Okuchi and Okuchi Full Form now have visible public Trello entity cards, but this run still treats them as source-watch terms until more public ranking coverage shows where they land in the fruit meta.</p>
+        </article>
+        <article className="content-card">
           <h3 className="text-lg font-bold text-white">Haze Seas race tier list</h3>
           <p className="mt-2 text-sm leading-6 text-white/66">Race tier list intent is visible in search demand, but this run keeps it on a source-watch basis until enough current public evidence supports a separate ranking block.</p>
         </article>
