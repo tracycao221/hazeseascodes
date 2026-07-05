@@ -8,8 +8,8 @@ export const siteConfig: SiteConfig = {
   description: `${gameConfig.name} wiki with active codes, tier list rankings, Trello and Discord status, calculators, guides, and source-backed Roblox progression help.`,
   valueProposition: `Track active ${gameConfig.name} codes, compare the best picks, and use practical tools before you spend time grinding in Roblox.`,
   shortDisclosure: `${gameConfig.name} Wiki is an unofficial fan-made resource. Roblox and the game creators remain the source of record for official support and updates.`,
-  lastUpdated: "2026-07-04",
-  freshnessLabel: "codes, source status, and route coverage checked on 2026-07-04",
+  lastUpdated: "2026-07-05",
+  freshnessLabel: "codes, source status, and route coverage checked on 2026-07-05",
   keywords: [
     `${gameConfig.name}`,
     `${gameConfig.name} codes`,
@@ -90,23 +90,27 @@ export const heroActions = [
 ] as const;
 
 export const heroMetrics: HeroMetric[] = [
-  { label: "Tracked codes", value: "10", note: "8 consensus listings plus 2 disputed codes" },
+  { label: "Tracked codes", value: "14", note: "13 official-board listings plus 1 disputed guide-only claim" },
   { label: "Core pages", value: "11", note: "Codes, updates, tier list, Trello, tools, guides, wiki" },
   { label: "Source notes", value: "Clear", note: "Official, community, and needs-check labels" },
   { label: "Source model", value: "Clear", note: "Official and community links split" }
 ];
 
 export const activeCodes: GameCode[] = [
-  { code: "RELEASE", reward: "Consensus launch code across current public trackers; exact reward amount was not independently tested in this run.", status: "Verified", addedDate: "Checked 2026-07-04" },
-  { code: "FREECASH", reward: "Consensus cash reward listing across current tracker coverage.", status: "Verified", addedDate: "Checked 2026-07-04" },
-  { code: "FREEGEMS", reward: "Consensus gems reward listing across current tracker coverage.", status: "Verified", addedDate: "Checked 2026-07-04" },
-  { code: "SUBSCRIBETOHAZEYT", reward: "Creator-promo code reported as active by current public code guides.", status: "Verified", addedDate: "Checked 2026-07-04" },
-  { code: "Sub2Nikkolapz", reward: "Creator-promo code reported as active by current public code guides.", status: "Verified", addedDate: "Checked 2026-07-04" },
-  { code: "Sub2BrosSiam", reward: "Creator-promo code reported as active by current public code guides.", status: "Verified", addedDate: "Checked 2026-07-04" },
-  { code: "Sub2BadiTubes", reward: "Creator-promo code reported as active by current public code guides.", status: "Verified", addedDate: "Checked 2026-07-04" },
-  { code: "Sub2BuilderboyTV", reward: "Creator-promo code reported as active by current public code guides.", status: "Verified", addedDate: "Checked 2026-07-04" },
-  { code: "GROUPONLY", reward: "Source-reported as a gems code by some trackers, but expiry status conflicts across July 2026 coverage.", status: "Unverified", addedDate: "Dispute checked 2026-07-04" },
-  { code: "HAZESEAS2026", reward: "Source-reported as a seasonal gems code by some trackers, but active status conflicts across July 2026 coverage.", status: "Unverified", addedDate: "Dispute checked 2026-07-04" }
+  { code: "HAZESEAS2026", reward: "Official public Trello board lists 10 Race Spins.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "RELEASE", reward: "Official public Trello board lists 1H x2 EXP.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "FREECASH", reward: "Official public Trello board lists 50k Cash.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "FREEGEMS", reward: "Official public Trello board lists 50 Gems.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "SUBSCRIBETOHAZEYT", reward: "Official public Trello board lists +50k Cash.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "Sub2Nikkolapz", reward: "Official public Trello board lists 20M x2 EXP.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "Sub2BrosSiam", reward: "Official public Trello board lists 20M x2 EXP.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "Sub2BadiTubes", reward: "Official public Trello board lists 20M x2 EXP.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "Sub2BuilderboyTV", reward: "Official public Trello board lists 20M x2 EXP.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "PATCH", reward: "Official public Trello board lists the code; Beebom reports Gems plus 1H x2 EXP.", status: "Needs check", addedDate: "Board and guide checked 2026-07-05" },
+  { code: "OKUCHI", reward: "Official public Trello board lists 5 Race Spins.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "Sub2XenoTy", reward: "Official public Trello board lists 20M x2 EXP.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "Sub2CaptainMaui", reward: "Official public Trello board lists 20M x2 EXP.", status: "Needs check", addedDate: "Official board checked 2026-07-05" },
+  { code: "GROUPONLY", reward: "Beebom still lists 10K Cash, but this code was not present on the public official Trello board checked in this run.", status: "Unverified", addedDate: "Guide-only claim checked 2026-07-05" }
 ];
 
 export const tierPreview: TierPreviewItem[] = [
@@ -231,10 +235,10 @@ export const officialLinks: LinkCard[] = [
     description: "Public Trello JSON confirms the board exists and is publicly accessible."
   },
   {
-    title: "Discord and source status",
-    href: "/trello",
-    eyebrow: "Community",
-    description: "Use this status route to separate official links, source-reported invites, and unverified community copies."
+    title: "Official Discord invite",
+    href: gameConfig.dataSources.discord ?? "/trello",
+    eyebrow: "Official",
+    description: "The public official Trello board links to discord.gg/hazeseas for codes and community updates."
   },
   {
     title: "Source checklist",

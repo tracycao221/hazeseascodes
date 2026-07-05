@@ -23,8 +23,8 @@ export const gameConfig: GameConfig = {
   },
   updateCadence: "Codes every 6-12 hours, update and source checks daily",
   dataSources: {
-    officialGameUrl: "https://www.roblox.com/games/6918802270/Haze-Seas-RELEASE",
-    discord: "https://discord.gg/xEcJmEqAY",
+    officialGameUrl: "https://www.roblox.com/games/6918802270/Haze-Seas",
+    discord: "https://discord.gg/hazeseas",
     trello: "https://trello.com/b/nn8bpTB0/haze-seas-official-trello"
   },
   ads: {

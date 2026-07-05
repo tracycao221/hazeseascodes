@@ -26,17 +26,17 @@ export const metadata: Metadata = {
 const statusCards = [
   {
     label: "Roblox updated timestamp",
-    value: "2026-07-04 05:55:45 UTC",
+    value: "2026-07-04 19:19:14 UTC",
     note: "Directly checked from Roblox public game metadata during this run."
   },
   {
     label: "Current player count snapshot",
-    value: "14,619 playing",
+    value: "16,879 playing",
     note: "Roblox public metadata snapshot captured during this run."
   },
   {
     label: "Visit count snapshot",
-    value: "242,893,219 visits",
+    value: "243,645,047 visits",
     note: "Roblox public metadata snapshot captured during this run."
   },
   {
@@ -80,7 +80,7 @@ export default function UpdatesPage() {
           </article>
           <article className="content-card">
             <h2 className="text-2xl font-bold text-white">Current fruit list signal</h2>
-            <p className="mt-3 text-sm leading-6 text-white/68">The same Roblox description currently lists 34 fruits, including Leopard, Dragon, Dough, Mammoth, Buddha, Venom, Phoenix, and Soul. Those names feed the wiki and tier-list route watch but do not automatically prove exact rankings.</p>
+            <p className="mt-3 text-sm leading-6 text-white/68">The same Roblox description currently lists 35 fruits, including Okuchi, Wolf, Mammoth, Leopard, Dragon, Dough, Buddha, Venom, Phoenix, and Soul. Those names feed the wiki and tier-list route watch but do not automatically prove exact rankings.</p>
           </article>
         </div>
       </section>
@@ -104,13 +104,13 @@ export default function UpdatesPage() {
           </Link>
           <Link href="/codes" className="content-card">
             <span className="mini-label">Codes cluster</span>
-            <h2 className="mt-3 text-xl font-bold text-white">Consensus codes plus disputed July 2026 claims</h2>
-            <p className="mt-2 text-sm leading-6 text-white/65">The codes page now separates consensus active listings from disputed codes like GROUPONLY and HAZESEAS2026.</p>
+            <h2 className="mt-3 text-xl font-bold text-white">Official-board codes plus disputed guide-only claims</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">The codes page now separates public official-board listings such as HAZESEAS2026 and OKUCHI from disputed guide-only claims like GROUPONLY.</p>
           </Link>
           <Link href="/trello" className="content-card">
             <span className="mini-label">Source status</span>
-            <h2 className="mt-3 text-xl font-bold text-white">Verified Trello board, source-reported Discord invite</h2>
-            <p className="mt-2 text-sm leading-6 text-white/65">The Trello route now distinguishes the public official board from the Discord invite that still relies on indirect public confirmation.</p>
+            <h2 className="mt-3 text-xl font-bold text-white">Verified Trello board and Discord invite</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">The Trello route now shows both the public official board and the Discord invite that board links directly.</p>
           </Link>
         </div>
       </section>

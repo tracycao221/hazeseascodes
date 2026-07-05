@@ -31,13 +31,13 @@ export default function CodesPage() {
       <PageIntro
         eyebrow="Freshness-sensitive"
         title={`${siteConfig.gameName} Codes`}
-        description="Use this page as the canonical Haze Seas codes surface. Consensus codes are listed as verified for this run, while disputed July 2026 code claims stay clearly marked as unverified."
+        description="Use this page as the canonical Haze Seas codes surface. Public official-board listings stay visible with needs-check labels, while guide-only July 2026 claims stay clearly marked as unverified."
       />
       <section className="mt-10">
         <SectionHeader
           eyebrow="Active list"
           title="Current best-known codes"
-          copy="This list was refreshed on 2026-07-04 from current public code guides, Roblox-facing source pages, and freshness checks. Conflicting July 2026 claims stay marked Unverified."
+          copy="This list was refreshed on 2026-07-05 from the public Haze Seas Official Trello board, Roblox-facing source pages, and current guide checks. Guide-only conflict claims stay marked Unverified."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {activeCodes.map((code) => (
@@ -57,7 +57,7 @@ export default function CodesPage() {
           <SectionHeader
             eyebrow="Redeem flow"
             title="How to redeem codes"
-            copy="Current public guides still describe a standard Roblox reward-panel flow, but the in-game button location should be rechecked after each visible Haze Seas update."
+            copy="The official Roblox description tells players to join the Discord for codes, and the public official Trello board keeps a codes card live. The in-game redeem button location still needs a fresh gameplay recheck after Update 1."
           />
           <ol className="mt-5 grid gap-3 text-white/70">
             <li>1. Open the game from the official Roblox page.</li>
@@ -70,7 +70,7 @@ export default function CodesPage() {
           <SectionHeader
             eyebrow="Verification"
             title="Code freshness policy"
-            copy="Codes should show the date checked, source type, and conflict notes when trackers disagree. For example, GROUPONLY and HAZESEAS2026 were still circulating on 2026-07-04, but they are not treated as safely active until a stronger source or live claim confirms them."
+            copy="Codes should show the date checked, source type, and conflict notes when sources disagree. In this run, the public official Trello board supported HAZESEAS2026, PATCH, OKUCHI, and multiple creator codes, while GROUPONLY remained a guide-only claim."
           />
         </article>
       </section>

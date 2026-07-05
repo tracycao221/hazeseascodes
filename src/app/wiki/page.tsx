@@ -63,7 +63,7 @@ export default function WikiPage() {
         </article>
         <article className="content-card">
           <h2 className="text-2xl font-bold text-white">Haze Seas fruit list</h2>
-          <p className="mt-3 text-sm leading-6 text-white/68">The official Roblox description currently lists 34 fruits, including Leopard, Dragon, Dough, Buddha, Mammoth, Venom, and Phoenix. Use the tier-list page for ranking signals and this hub for entity expansion planning.</p>
+          <p className="mt-3 text-sm leading-6 text-white/68">The official Roblox description currently lists 35 fruits, including Okuchi, Wolf, Leopard, Dragon, Dough, Buddha, Mammoth, Venom, and Phoenix. Use the tier-list page for ranking signals and this hub for entity expansion planning.</p>
         </article>
       </section>
     </main>

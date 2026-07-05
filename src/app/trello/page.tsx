@@ -28,7 +28,7 @@ const statusRows = [
     label: "Official Roblox page",
     href: gameConfig.dataSources.officialGameUrl,
     status: "Primary source",
-    note: "Verified on 2026-07-04 for the live game title, creator group, update timestamp, and public game description."
+    note: "Verified on 2026-07-05 for the live game title, creator group, update timestamp, player count snapshot, and public game description."
   },
   {
     label: "Haze Studios Roblox group",
@@ -39,14 +39,14 @@ const statusRows = [
   {
     label: "Discord",
     href: gameConfig.dataSources.discord ?? "#",
-    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Source-reported official invite" : "Needs verification",
-    note: "Current code and Trello guides point to this invite as the official server, but this run did not extract the invite directly from a Roblox-owned surface."
+    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Verified via official Trello" : "Needs verification",
+    note: "The public Haze Seas Official Trello board links directly to discord.gg/hazeseas on its Discord Server card."
   },
   {
     label: "Trello",
     href: gameConfig.dataSources.trello ?? "#",
     status: gameConfig.dataSources.trello && gameConfig.dataSources.trello !== "#" ? "Verified public board" : "No official board verified",
-    note: "Public Trello JSON confirms the Haze Seas Official Trello board is live and public as of 2026-07-04."
+    note: "Public Trello JSON confirms the Haze Seas Official Trello board is live and public as of 2026-07-05, with codes, sea events, devil fruits, swords, and fighting styles cards."
   },
   {
     label: "Wiki",
@@ -70,7 +70,7 @@ export default function TrelloStatusPage() {
         <SectionHeader
           eyebrow="Official links"
           title="Source status"
-          copy="This page was refreshed on 2026-07-04. Verified links are separated from source-reported links so players can see what is official, what is public but indirect, and what is still unverified."
+          copy="This page was refreshed on 2026-07-05. Verified links are separated from community or guide-only claims so players can see what is official, what is public but indirect, and what is still unverified."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {statusRows.map((item) => {

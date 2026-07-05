@@ -51,7 +51,7 @@ export default function GuidesPage() {
       <section className="mt-10 grid gap-4 lg:grid-cols-2">
         <article className="content-card">
           <h2 className="text-2xl font-bold text-white">Haze Seas beginner guide</h2>
-          <p className="mt-3 text-sm leading-6 text-white/68">Beginner-guide demand is still strong. Start on the official Roblox page, claim consensus codes first, then use the wiki and tier-list pages before committing rare fruit or upgrade resources.</p>
+          <p className="mt-3 text-sm leading-6 text-white/68">Beginner-guide demand is still strong. Start on the official Roblox page, check the public Trello codes card first, then use the wiki and tier-list pages before committing rare fruit or upgrade resources.</p>
         </article>
         <article className="content-card">
           <h2 className="text-2xl font-bold text-white">Haze Seas fruit spawn time and VIP server fruit spawns</h2>
