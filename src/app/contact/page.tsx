@@ -5,7 +5,19 @@ import { Breadcrumbs, PageIntro } from "@/components/ui/content";
 export const metadata: Metadata = {
   title: `Contact ${siteConfig.name}`,
   description: `Contact and correction guidance for ${siteConfig.name}.`,
-  alternates: { canonical: `${siteConfig.domain}/contact` }
+  alternates: { canonical: `${siteConfig.domain}/contact` },
+  openGraph: {
+    title: `Contact ${siteConfig.name}`,
+    description: `Contact and correction guidance for ${siteConfig.name}.`,
+    url: `${siteConfig.domain}/contact`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Contact ${siteConfig.name}`,
+    description: `Contact and correction guidance for ${siteConfig.name}.`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  }
 };
 
 export default function ContactPage() {

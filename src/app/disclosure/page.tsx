@@ -5,7 +5,19 @@ import { Breadcrumbs, PageIntro } from "@/components/ui/content";
 export const metadata: Metadata = {
   title: `${siteConfig.name} Fan-made Disclosure`,
   description: `Unofficial fan-made disclosure for ${siteConfig.name}.`,
-  alternates: { canonical: `${siteConfig.domain}/disclosure` }
+  alternates: { canonical: `${siteConfig.domain}/disclosure` },
+  openGraph: {
+    title: `${siteConfig.name} Fan-made Disclosure`,
+    description: `Unofficial fan-made disclosure for ${siteConfig.name}.`,
+    url: `${siteConfig.domain}/disclosure`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} Fan-made Disclosure`,
+    description: `Unofficial fan-made disclosure for ${siteConfig.name}.`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  }
 };
 
 export default function DisclosurePage() {

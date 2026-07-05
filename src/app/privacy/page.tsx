@@ -5,7 +5,19 @@ import { Breadcrumbs, PageIntro } from "@/components/ui/content";
 export const metadata: Metadata = {
   title: `${siteConfig.name} Privacy Policy`,
   description: `Privacy Policy for ${siteConfig.name}, including analytics, advertising, and third-party cookie disclosures.`,
-  alternates: { canonical: `${siteConfig.domain}/privacy` }
+  alternates: { canonical: `${siteConfig.domain}/privacy` },
+  openGraph: {
+    title: `${siteConfig.name} Privacy Policy`,
+    description: `Privacy Policy for ${siteConfig.name}, including analytics, advertising, and third-party cookie disclosures.`,
+    url: `${siteConfig.domain}/privacy`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} Privacy Policy`,
+    description: `Privacy Policy for ${siteConfig.name}, including analytics, advertising, and third-party cookie disclosures.`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  }
 };
 
 export default function PrivacyPage() {

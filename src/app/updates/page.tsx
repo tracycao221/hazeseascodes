@@ -26,17 +26,17 @@ export const metadata: Metadata = {
 const statusCards = [
   {
     label: "Roblox updated timestamp",
-    value: "2026-07-04 19:19:14 UTC",
+    value: "2026-07-05 05:39:16 UTC",
     note: "Directly checked from Roblox public game metadata during this run."
   },
   {
     label: "Current player count snapshot",
-    value: "16,676 playing",
+    value: "17,333 playing",
     note: "Roblox public metadata snapshot captured during this run."
   },
   {
     label: "Visit count snapshot",
-    value: "243,835,656 visits",
+    value: "244,075,502 visits",
     note: "Roblox public metadata snapshot captured during this run."
   },
   {
@@ -76,7 +76,7 @@ export default function UpdatesPage() {
         <div className="mt-6 grid gap-4 lg:grid-cols-2">
           <article className="content-card">
             <h2 className="text-2xl font-bold text-white">What the Roblox description currently says</h2>
-            <p className="mt-3 text-sm leading-6 text-white/68">The official Roblox page currently says fruits spawn every 60 minutes, despawn after 20 minutes, fruits also spawn in VIP servers with a five-fruit limit, and D Clan gives Conq Haki.</p>
+            <p className="mt-3 text-sm leading-6 text-white/68">The official Roblox page currently says fruits spawn every 60 minutes, despawn after 20 minutes, fruits also spawn in VIP servers with a five-fruit limit, D. Clan gives Conq Haki, and players should join the community server for sneak peeks and codes.</p>
           </article>
           <article className="content-card">
             <h2 className="text-2xl font-bold text-white">Current fruit list signal</h2>

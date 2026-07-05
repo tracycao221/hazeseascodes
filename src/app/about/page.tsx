@@ -5,7 +5,19 @@ import { Breadcrumbs, PageIntro } from "@/components/ui/content";
 export const metadata: Metadata = {
   title: `About ${siteConfig.name}`,
   description: `About ${siteConfig.name}, its author, editorial process, and source standards.`,
-  alternates: { canonical: `${siteConfig.domain}/about` }
+  alternates: { canonical: `${siteConfig.domain}/about` },
+  openGraph: {
+    title: `About ${siteConfig.name}`,
+    description: `About ${siteConfig.name}, its author, editorial process, and source standards.`,
+    url: `${siteConfig.domain}/about`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `About ${siteConfig.name}`,
+    description: `About ${siteConfig.name}, its author, editorial process, and source standards.`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  }
 };
 
 export default function AboutPage() {

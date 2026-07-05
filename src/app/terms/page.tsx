@@ -5,7 +5,19 @@ import { Breadcrumbs, PageIntro } from "@/components/ui/content";
 export const metadata: Metadata = {
   title: `${siteConfig.name} Terms of Service`,
   description: `Terms of Service for using ${siteConfig.name}.`,
-  alternates: { canonical: `${siteConfig.domain}/terms` }
+  alternates: { canonical: `${siteConfig.domain}/terms` },
+  openGraph: {
+    title: `${siteConfig.name} Terms of Service`,
+    description: `Terms of Service for using ${siteConfig.name}.`,
+    url: `${siteConfig.domain}/terms`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} Terms of Service`,
+    description: `Terms of Service for using ${siteConfig.name}.`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  }
 };
 
 export default function TermsPage() {

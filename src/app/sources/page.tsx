@@ -7,7 +7,19 @@ import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 export const metadata: Metadata = {
   title: `${siteConfig.gameName} Sources`,
   description: `Source and verification notes for ${siteConfig.gameName} codes, guides, wiki claims, and tier-list updates.`,
-  alternates: { canonical: `${siteConfig.domain}/sources` }
+  alternates: { canonical: `${siteConfig.domain}/sources` },
+  openGraph: {
+    title: `${siteConfig.gameName} Sources`,
+    description: `Source and verification notes for ${siteConfig.gameName} codes, guides, wiki claims, and tier-list updates.`,
+    url: `${siteConfig.domain}/sources`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.gameName} Sources`,
+    description: `Source and verification notes for ${siteConfig.gameName} codes, guides, wiki claims, and tier-list updates.`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  }
 };
 
 export default function SourcesPage() {
