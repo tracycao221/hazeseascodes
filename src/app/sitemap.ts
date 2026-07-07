@@ -11,6 +11,7 @@ const routes: Array<{
   { path: "", changeFrequency: "daily", priority: 1 },
   { path: "/codes", changeFrequency: "daily", priority: 0.95 },
   { path: "/tier-list", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/tier-list-watch", changeFrequency: "weekly", priority: 0.82 },
   { path: "/updates", changeFrequency: "daily", priority: 0.88 },
   { path: "/trello", changeFrequency: "weekly", priority: 0.72 },
   { path: "/calculator", changeFrequency: "weekly", priority: 0.85 },

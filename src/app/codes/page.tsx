@@ -31,13 +31,13 @@ export default function CodesPage() {
       <PageIntro
         eyebrow="Freshness-sensitive"
         title={`${siteConfig.gameName} Codes`}
-        description="Use this page as the canonical Haze Seas codes surface. Public official-board listings stay visible with needs-check labels, while guide-only July 2026 claims stay clearly marked as unverified."
+        description="Use this page as the canonical Haze Seas codes surface. Current Haze Seas Game Info board listings stay visible with needs-check labels, while guide-only or legacy-board conflicts stay clearly marked as unverified."
       />
       <section className="mt-10">
         <SectionHeader
           eyebrow="Active list"
           title="Current best-known codes"
-          copy="This list was refreshed on 2026-07-05 from the public Haze Seas Official Trello board, Roblox-facing source pages, and current guide checks. Guide-only conflict claims stay marked Unverified."
+          copy="This list was rechecked on 2026-07-07 from the public Haze Seas Official Trello board plus current search and guide coverage. Only the current Haze Seas Game Info codes card counts as board evidence when older carryover cards conflict."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {activeCodes.map((code) => (
@@ -70,7 +70,7 @@ export default function CodesPage() {
           <SectionHeader
             eyebrow="Verification"
             title="Code freshness policy"
-            copy="Codes should show the date checked, source type, and conflict notes when sources disagree. In this run, the public official Trello board supported HAZESEAS2026, PATCH, OKUCHI, and multiple creator codes, while GROUPONLY remained a guide-only claim."
+            copy="Codes should show the date checked, source type, and conflict notes when sources disagree. On 2026-07-07, the current Haze Seas Game Info codes card still supported HAZESEAS2026, PATCH, OKUCHI, and multiple creator codes, while GROUPONLY remained a guide-only and legacy-board conflict."
           />
         </article>
       </section>

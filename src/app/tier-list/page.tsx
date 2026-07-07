@@ -95,11 +95,11 @@ export default function TierListPage() {
         </article>
         <article className="content-card">
           <h3 className="text-lg font-bold text-white">Haze Seas race tier list</h3>
-          <p className="mt-2 text-sm leading-6 text-white/66">Race tier list intent is visible in search demand, but this run keeps it on a source-watch basis until enough current public evidence supports a separate ranking block.</p>
+          <p className="mt-2 text-sm leading-6 text-white/66">Race tier list intent is still visible in fresh July 2026 Google and YouTube results, and it now has a dedicated watch route instead of living only as a hold note on the fruit page.</p>
         </article>
         <article className="content-card">
           <h3 className="text-lg font-bold text-white">Haze Seas sword tier list and fighting style tier list</h3>
-          <p className="mt-2 text-sm leading-6 text-white/66">Sword tier list and fighting style tier list queries are recorded, but they remain support-status intents until stronger route-ready evidence appears.</p>
+          <p className="mt-2 text-sm leading-6 text-white/66">Sword tier list and fighting style tier list queries now point to a dedicated source-watch route so exact-intent demand is covered without inventing final rank orders.</p>
         </article>
       </section>
 
@@ -130,6 +130,7 @@ export default function TierListPage() {
       <div className="mt-10 flex flex-wrap gap-3">
         <Link href="/codes" className="button-secondary">Get codes</Link>
         <Link href="/calculator" className="button-secondary">Use the calculator</Link>
+        <Link href="/tier-list-watch" className="button-secondary">Open tier watch</Link>
         <Link href="/trello" className="button-secondary">Check source status</Link>
       </div>
     </main>

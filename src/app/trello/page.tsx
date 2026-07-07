@@ -28,7 +28,7 @@ const statusRows = [
     label: "Official Roblox page",
     href: gameConfig.dataSources.officialGameUrl,
     status: "Primary source",
-    note: "Verified on 2026-07-05 for the live game title, creator group, update timestamp, player count snapshot, and public game description."
+    note: "Official Roblox page wording and Roblox API metadata were both rechecked on 2026-07-07 for the live game title, creator group, update identity, and public game description."
   },
   {
     label: "Haze Studios Roblox group",
@@ -39,14 +39,14 @@ const statusRows = [
   {
     label: "Discord",
     href: gameConfig.dataSources.discord ?? "#",
-    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Verified via official Trello" : "Needs verification",
-    note: "The public Haze Seas Official Trello board links directly to discord.gg/hazeseas on its Discord Server card."
+    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Direct invite revalidated" : "Needs verification",
+    note: "The public Haze Seas Official Trello board links to discord.gg/hazeseas on its Discord Server card, and this run revalidated the redirect to discord.com/invite/hazeseas."
   },
   {
     label: "Trello",
     href: gameConfig.dataSources.trello ?? "#",
     status: gameConfig.dataSources.trello && gameConfig.dataSources.trello !== "#" ? "Verified public board" : "No official board verified",
-    note: "Public Trello JSON confirms the Haze Seas Official Trello board is live and public as of 2026-07-05, with codes, Sea 3 locations, materials, dragon-skin, and entity cards visible in the current board surface."
+    note: "Public Trello JSON confirmed again on 2026-07-07 that the Haze Seas Official Trello board is live and public, with codes, Sea 3 locations, materials, dragon-skin, and entity cards visible in the current board surface. The same board also still contains older Haze Piece and Project New World carryover cards."
   },
   {
     label: "Wiki",
@@ -70,7 +70,7 @@ export default function TrelloStatusPage() {
         <SectionHeader
           eyebrow="Official links"
           title="Source status"
-          copy="This page was refreshed on 2026-07-05. Verified links are separated from community or guide-only claims so players can see what is official, what is public but indirect, and what is still unverified."
+          copy="This page was refreshed on 2026-07-07. Verified links are separated from community or guide-only claims so players can see what is official, what is public but indirect, and what is still unverified."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {statusRows.map((item) => {
@@ -114,6 +114,11 @@ export default function TrelloStatusPage() {
           <span className="mini-label">Meta</span>
           <h2 className="mt-3 text-xl font-bold text-white">Tier-list sources</h2>
           <p className="mt-2 text-sm leading-6 text-white/65">Use Discord, YouTube, update notes, and wiki data as signals, then label ranking confidence clearly.</p>
+        </Link>
+        <Link href="/tier-list-watch" className="content-card">
+          <span className="mini-label">Exact intent</span>
+          <h2 className="mt-3 text-xl font-bold text-white">Race, sword, and style watch</h2>
+          <p className="mt-2 text-sm leading-6 text-white/65">Use the dedicated watch route for exact race, sword, and fighting-style tier-list demand without inventing final orders.</p>
         </Link>
         <Link href="/sources" className="content-card">
           <span className="mini-label">Editorial</span>

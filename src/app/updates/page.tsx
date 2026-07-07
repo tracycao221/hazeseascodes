@@ -26,23 +26,23 @@ export const metadata: Metadata = {
 const statusCards = [
   {
     label: "Roblox updated timestamp",
-    value: "2026-07-05 05:39:16 UTC",
-    note: "Directly checked from Roblox public game metadata during this run."
+    value: "2026-07-06 14:26:07 UTC",
+    note: "Latest numeric snapshot captured from Roblox public metadata during the 2026-07-07 check, with the official Roblox page still surfacing the same Update 1 title and description cluster."
   },
   {
     label: "Current player count snapshot",
-    value: "17,333 playing",
-    note: "Roblox public metadata snapshot captured during this run."
+    value: "16,824 playing",
+    note: "Latest numeric snapshot captured on 2026-07-07 from the Roblox games API."
   },
   {
     label: "Visit count snapshot",
-    value: "244,075,502 visits",
-    note: "Roblox public metadata snapshot captured during this run."
+    value: "245,856,486 visits",
+    note: "Latest numeric snapshot captured on 2026-07-07. Recheck after the next official metadata pull."
   },
   {
-    label: "Creator",
-    value: "[HS] Haze Studios",
-    note: "Roblox lists the game creator as the Haze Studios group."
+    label: "Board freshness",
+    value: "2026-07-04 20:51:53 UTC",
+    note: "The public Haze Seas Official Trello JSON reported this as the latest visible board activity time when rechecked on 2026-07-07."
   }
 ];
 
@@ -71,7 +71,7 @@ export default function UpdatesPage() {
         <SectionHeader
           eyebrow="Official Roblox signals"
           title="Current source-of-record notes"
-          copy="These notes come from current public Roblox metadata and should outrank generic tracker copy when the two disagree."
+          copy="These notes combine the latest confirmed Roblox metadata snapshot rechecked on 2026-07-07 with the official Roblox page wording rechecked the same day. They should outrank generic tracker copy when the two disagree."
         />
         <div className="mt-6 grid gap-4 lg:grid-cols-2">
           <article className="content-card">
@@ -105,17 +105,22 @@ export default function UpdatesPage() {
           <Link href="/codes" className="content-card">
             <span className="mini-label">Codes cluster</span>
             <h2 className="mt-3 text-xl font-bold text-white">Official-board codes plus disputed guide-only claims</h2>
-            <p className="mt-2 text-sm leading-6 text-white/65">The codes page now separates public official-board listings such as HAZESEAS2026 and OKUCHI from disputed guide-only claims like GROUPONLY.</p>
+            <p className="mt-2 text-sm leading-6 text-white/65">The codes page now separates current Haze Seas Game Info board listings such as HAZESEAS2026 and OKUCHI from disputed guide-only or legacy-board claims like GROUPONLY.</p>
           </Link>
           <Link href="/tier-list" className="content-card">
             <span className="mini-label">Tier watch</span>
             <h2 className="mt-3 text-xl font-bold text-white">Okuchi and Dragon full-form watch</h2>
             <p className="mt-2 text-sm leading-6 text-white/65">Fresh public board activity exposes Okuchi and Dragon full-form entity cards, but this run still keeps them on a source-watch basis instead of forcing new rankings.</p>
           </Link>
+          <Link href="/tier-list-watch" className="content-card">
+            <span className="mini-label">Forced expansion</span>
+            <h2 className="mt-3 text-xl font-bold text-white">Race, sword, and style tier-list watch</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">Fresh Google and YouTube query families now justify a dedicated watch route for race, sword, and fighting-style tier-list intent.</p>
+          </Link>
           <Link href="/trello" className="content-card">
             <span className="mini-label">Source status</span>
-            <h2 className="mt-3 text-xl font-bold text-white">Verified Trello board and Discord invite</h2>
-            <p className="mt-2 text-sm leading-6 text-white/65">The Trello route now shows both the public official board and the Discord invite that board links directly.</p>
+            <h2 className="mt-3 text-xl font-bold text-white">Verified Trello board plus direct Discord recheck</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">The Trello route now records both the public official board and the directly revalidated Discord invite it links to.</p>
           </Link>
         </div>
       </section>
@@ -129,7 +134,7 @@ export default function UpdatesPage() {
         <a href={gameConfig.dataSources.trello ?? "#"} target="_blank" rel="noreferrer" className="content-card">
           <span className="mini-label">Verified board</span>
           <h2 className="mt-3 text-xl font-bold text-white">Open the public Trello board</h2>
-          <p className="mt-2 text-sm leading-6 text-white/65">The Haze Seas Official Trello board is publicly reachable and should be rechecked before large guide or wiki expansions.</p>
+          <p className="mt-2 text-sm leading-6 text-white/65">The Haze Seas Official Trello board is publicly reachable, but it should be filtered to current Haze Seas cards before large guide or wiki expansions.</p>
         </a>
         <Link href="/sources" className="content-card">
           <span className="mini-label">Editorial</span>

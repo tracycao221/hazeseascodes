@@ -1,0 +1,29 @@
+{
+  "gameSlug": "haze-seas",
+  "status": "pass",
+  "checkedAt": "2026-07-07T00:17:54.000Z",
+  "checkedDate": "2026-07-07",
+  "checks": {
+    "requiredRoutes": [
+      "/",
+      "/codes",
+      "/tier-list",
+      "/tier-list-watch",
+      "/trello",
+      "/guides",
+      "/wiki",
+      "/updates",
+      "/sources",
+      "/about",
+      "/contact",
+      "/privacy",
+      "/terms",
+      "/disclosure"
+    ],
+    "missingRouteFiles": []
+  },
+  "notes": [
+    "Codex content updates must use source-backed keyword-to-route decisions before adding or changing pages.",
+    "This 2026-07-07 refresh rechecked the public Trello board, Roblox official page wording, Roblox API metadata, the direct Discord invite, and fresh Google/YouTube demand before route-level edits."
+  ]
+}
