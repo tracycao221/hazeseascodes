@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-07-07T07:42:00Z",
+  "domain": "hazeseascodes.com",
+  "project": "haze-seas-calculator",
+  "status": "ready_to_apply",
+  "productionEnv": {
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_POPUNDER": "true",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_DELAY_MS": "4000",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_MIN_PAGE_VIEWS": "2",
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_SOCIAL_BAR": "true",
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_STICKY_RAIL": "true",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_SCRIPT_URL": "https://pl30200530.effectivecpmnetwork.com/94/0d/71/940d714b279cbde8c92edccdb0532a87.js",
+    "NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_SCRIPT_URL": "https://pl30188222.effectivecpmnetwork.com/27/a2/7d/27a27d4a1f20318bd649e1951ab83e75.js",
+    "NEXT_PUBLIC_ADSTERRA_SMARTLINK_URL": "https://www.effectivecpmnetwork.com/ae6y7r14k?key=2f8a62dfe53139f9b58e513b1fd3b2da",
+    "NEXT_PUBLIC_ADSTERRA_NATIVE_1_ID": "container-80dec44aadf5ff4014add87a6db17e7e",
+    "NEXT_PUBLIC_ADSTERRA_NATIVE_1_SCRIPT_URL": "https://pl30200532.effectivecpmnetwork.com/80dec44aadf5ff4014add87a6db17e7e/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_468X60_KEY": "8e20dd33dc3e24dcc68fb770a6fe21e4",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_468X60_SCRIPT_URL": "https://www.highperformanceformat.com/8e20dd33dc3e24dcc68fb770a6fe21e4/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_300X250_KEY": "91f616ed19fa1422a4b60c340491fc35",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_300X250_SCRIPT_URL": "https://www.highperformanceformat.com/91f616ed19fa1422a4b60c340491fc35/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_160X300_KEY": "09f0195574f52d3d787e1f035366a104",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_160X300_SCRIPT_URL": "https://www.highperformanceformat.com/09f0195574f52d3d787e1f035366a104/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_160X600_KEY": "3ef94db2a94c2d5b946a622c7fceeb14",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_160X600_SCRIPT_URL": "https://www.highperformanceformat.com/3ef94db2a94c2d5b946a622c7fceeb14/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_320X50_KEY": "defc6636ff45bca33c52e86a593b6eb5",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_320X50_SCRIPT_URL": "https://www.highperformanceformat.com/defc6636ff45bca33c52e86a593b6eb5/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_728X90_KEY": "e021bd07c66f23b3710a2cd4dfaad58c",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_728X90_SCRIPT_URL": "https://www.highperformanceformat.com/e021bd07c66f23b3710a2cd4dfaad58c/invoke.js"
+  },
+  "note": "Public Adsterra runtime values only. Private API keys and Cloudflare tokens are never written here."
+}

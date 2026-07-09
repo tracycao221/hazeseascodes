@@ -1,12 +1,18 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { AdsterraSmartLink } from "@/components/ads";
+import { RouteAwareAdSlots } from "@/components/ads/RouteAwareAdSlots";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { siteConfig } from "@/data/site";
+import { runtimeConfig } from "@/lib/runtime-config";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const popunderScriptUrl = runtimeConfig.adsterraEnablePopunder ? runtimeConfig.adsterraPopunderScriptUrl : undefined;
+const socialBarScriptUrl = runtimeConfig.adsterraEnableSocialBar ? runtimeConfig.adsterraSocialBarScriptUrl : undefined;
+const adsenseClientId = runtimeConfig.adsenseClientId;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
@@ -60,13 +66,40 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
+        <style
+          id="ad-cls-baseline"
+          dangerouslySetInnerHTML={{
+            __html: ".ad-shell,.ad-host{min-height:90px}.ad-leaderboard .ad-shell{min-height:124px}"
+          }}
+        />
+        {adsenseClientId ? (
+          <script
+            id="google-adsense"
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`}
+            crossOrigin="anonymous"
+          />
+        ) : null}
+        {popunderScriptUrl ? (
+          <Script id="adsterra-popunder" src={popunderScriptUrl} strategy="afterInteractive" />
+        ) : null}
+        {socialBarScriptUrl ? (
+          <Script id="domain-only-effectivecpm" strategy="afterInteractive">
+            {`
+              if (window.location.hostname === "hazeseascodes.com") {
+                var adScript = document.createElement("script");
+                adScript.src = "${socialBarScriptUrl}";
+                adScript.async = true;
+                document.body.appendChild(adScript);
+              }
+            `}
+          </Script>
+        ) : null}
+        <AdsterraSmartLink />
         <Navbar />
+        <RouteAwareAdSlots />
         {children}
         <Footer />
-        <Script
-          src="https://pl30188222.effectivecpmnetwork.com/27/a2/7d/27a27d4a1f20318bd649e1951ab83e75.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
