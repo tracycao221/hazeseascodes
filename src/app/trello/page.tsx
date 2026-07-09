@@ -6,7 +6,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Trello, Discord & Wiki Status`,
+  title: { absolute: `${siteConfig.gameName} Trello, Discord & Wiki Status` },
   description: `Official-link status for ${siteConfig.gameName} Trello, Discord, wiki, Roblox updates, codes, and community sources.`,
   alternates: { canonical: `${siteConfig.domain}/trello` },
   openGraph: {
@@ -28,7 +28,7 @@ const statusRows = [
     label: "Official Roblox page",
     href: gameConfig.dataSources.officialGameUrl,
     status: "Primary source",
-    note: "Official Roblox page wording and Roblox API metadata were both rechecked on 2026-07-07 for the live game title, creator group, update identity, and public game description."
+    note: "The official Roblox page and current RELEASE + UPD 1 title were rechecked on 2026-07-09, while the last recorded direct Roblox metadata snapshot remains the numeric baseline for update timing and counts."
   },
   {
     label: "Haze Studios Roblox group",
@@ -39,14 +39,14 @@ const statusRows = [
   {
     label: "Discord",
     href: gameConfig.dataSources.discord ?? "#",
-    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Direct invite revalidated" : "Needs verification",
-    note: "The public Haze Seas Official Trello board links to discord.gg/hazeseas on its Discord Server card, and this run revalidated the redirect to discord.com/invite/hazeseas."
+    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Board-linked invite still current" : "Needs verification",
+    note: "The public Haze Seas Official Trello board still linked to discord.gg/hazeseas when rechecked on 2026-07-09. Treat the board as the verification source for this invite."
   },
   {
     label: "Trello",
     href: gameConfig.dataSources.trello ?? "#",
     status: gameConfig.dataSources.trello && gameConfig.dataSources.trello !== "#" ? "Verified public board" : "No official board verified",
-    note: "Public Trello JSON confirmed again on 2026-07-07 that the Haze Seas Official Trello board is live and public, with codes, Sea 3 locations, materials, dragon-skin, and entity cards visible in the current board surface. The same board also still contains older Haze Piece and Project New World carryover cards."
+    note: "Public Trello JSON confirmed again on 2026-07-09 that the Haze Seas Official Trello board is live and public, with 13 current code listings plus Sea 3, materials, dragon-skin, race, sword, and entity cards. The board's latest activity remains 2026-07-04 and it still contains older Haze Piece and Project New World carryover cards."
   },
   {
     label: "Wiki",
@@ -70,7 +70,7 @@ export default function TrelloStatusPage() {
         <SectionHeader
           eyebrow="Official links"
           title="Source status"
-          copy="This page was refreshed on 2026-07-07. Verified links are separated from community or guide-only claims so players can see what is official, what is public but indirect, and what is still unverified."
+          copy="This page was refreshed on 2026-07-09. Verified links are separated from community or guide-only claims so players can see what is official, what is public but indirect, and what is still unverified."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {statusRows.map((item) => {

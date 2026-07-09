@@ -5,19 +5,19 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Guides`,
-  description: `Beginner, progression, and advanced strategy guides for ${siteConfig.gameName}.`,
+  title: { absolute: `${siteConfig.gameName} Guide: Fruit Spawns, Haki & Sea Events` },
+  description: `${siteConfig.gameName} beginner guide for fruit spawn times, VIP server fruit limits, Haki, sea events, NPC locations, and progression routes.`,
   alternates: { canonical: `${siteConfig.domain}/guides` },
   openGraph: {
-    title: `${siteConfig.gameName} Guides`,
-    description: `Beginner, progression, Haki, sea events, and route-planning guides for ${siteConfig.gameName}.`,
+    title: `${siteConfig.gameName} Guide: Fruit Spawns, Haki & Sea Events`,
+    description: `${siteConfig.gameName} beginner guide for fruit spawn times, VIP server fruit limits, Haki, sea events, NPC locations, and progression routes.`,
     url: `${siteConfig.domain}/guides`,
     images: [`${siteConfig.domain}/opengraph-image`]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.gameName} Guides`,
-    description: `Beginner, progression, Haki, sea events, and route-planning guides for ${siteConfig.gameName}.`,
+    title: `${siteConfig.gameName} Guide: Fruit Spawns, Haki & Sea Events`,
+    description: `${siteConfig.gameName} beginner guide for fruit spawn times, VIP server fruit limits, Haki, sea events, NPC locations, and progression routes.`,
     images: [`${siteConfig.domain}/opengraph-image`]
   }
 };
@@ -29,8 +29,8 @@ export default function GuidesPage() {
       <Breadcrumbs items={[{ label: "Guides", href: "/guides" }]} />
       <PageIntro
         eyebrow="Guide hub"
-        title={`${siteConfig.gameName} Guides`}
-        description="Use this hub for beginner help, farming routes, boss prep, event notes, and advanced strategy."
+        title={`${siteConfig.gameName} Guide: Fruit Spawns, Haki, and Sea Events`}
+        description="Use this guide hub for how to play, 60-minute fruit spawns, the 20-minute despawn window, VIP server fruit limits, Haki checks, sea events, and NPC route planning."
       />
       <section className="mt-10">
         <SectionHeader

@@ -5,19 +5,19 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Wiki`,
-  description: `${siteConfig.gameName} wiki hub for items, maps, systems, builds, rewards, and Roblox game entities.`,
+  title: { absolute: `${siteConfig.gameName} Wiki: Fruits, NPCs, Materials & Sea 3` },
+  description: `${siteConfig.gameName} wiki for 35 fruits, NPC locations, materials, Sea 3, Wandering Merchant, bosses, sea events, Okuchi, and dragon skins.`,
   alternates: { canonical: `${siteConfig.domain}/wiki` },
   openGraph: {
-    title: `${siteConfig.gameName} Wiki`,
-    description: `${siteConfig.gameName} materials, NPC locations, sea events, fruits, and systems wiki hub.`,
+    title: `${siteConfig.gameName} Wiki: Fruits, NPCs, Materials & Sea 3`,
+    description: `${siteConfig.gameName} wiki for 35 fruits, NPC locations, materials, Sea 3, Wandering Merchant, bosses, sea events, Okuchi, and dragon skins.`,
     url: `${siteConfig.domain}/wiki`,
     images: [`${siteConfig.domain}/opengraph-image`]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.gameName} Wiki`,
-    description: `${siteConfig.gameName} materials, NPC locations, sea events, fruits, and systems wiki hub.`,
+    title: `${siteConfig.gameName} Wiki: Fruits, NPCs, Materials & Sea 3`,
+    description: `${siteConfig.gameName} wiki for 35 fruits, NPC locations, materials, Sea 3, Wandering Merchant, bosses, sea events, Okuchi, and dragon skins.`,
     images: [`${siteConfig.domain}/opengraph-image`]
   }
 };
@@ -29,8 +29,8 @@ export default function WikiPage() {
       <Breadcrumbs items={[{ label: "Wiki", href: "/wiki" }]} />
       <PageIntro
         eyebrow="Wiki hub"
-        title={`${siteConfig.gameName} Wiki`}
-        description="Use this hub for game systems, items, maps, rewards, builds, and other details that help players decide what to do next."
+        title={`${siteConfig.gameName} Wiki: Fruits, NPCs, Materials, and Sea 3`}
+        description="Use this wiki hub for the official 35-fruit list, NPC locations, materials, Sea 3 routes, Wandering Merchant notes, bosses, sea events, Okuchi, and dragon skins."
       />
       <section className="mt-10">
         <SectionHeader
