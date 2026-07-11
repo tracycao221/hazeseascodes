@@ -7,7 +7,19 @@ import { Breadcrumbs, PageIntro } from "@/components/ui/content";
 export const metadata: Metadata = {
   title: `${siteConfig.gameName} Calculator`,
   description: `Use the ${siteConfig.gameName} calculator starter to plan codes, farming, boss prep, PvP, and progression decisions.`,
-  alternates: { canonical: `${siteConfig.domain}/calculator` }
+  alternates: { canonical: `${siteConfig.domain}/calculator` },
+  openGraph: {
+    title: `${siteConfig.gameName} Calculator`,
+    description: `Use the ${siteConfig.gameName} calculator starter to plan codes, farming, boss prep, PvP, and progression decisions.`,
+    url: `${siteConfig.domain}/calculator`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.gameName} Calculator`,
+    description: `Use the ${siteConfig.gameName} calculator starter to plan codes, farming, boss prep, PvP, and progression decisions.`,
+    images: [`${siteConfig.domain}/opengraph-image`]
+  }
 };
 
 export default function CalculatorPage() {

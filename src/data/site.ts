@@ -8,8 +8,8 @@ export const siteConfig: SiteConfig = {
   description: `${gameConfig.name} wiki with active codes, tier list rankings, Trello and Discord status, calculators, guides, and source-backed Roblox progression help.`,
   valueProposition: `Track active ${gameConfig.name} codes, compare the best picks, and use practical tools before you spend time grinding in Roblox.`,
   shortDisclosure: `${gameConfig.name} Wiki is an unofficial fan-made resource. Roblox and the game creators remain the source of record for official support and updates.`,
-  lastUpdated: "2026-07-09",
-  freshnessLabel: "codes, source status, and query-to-route coverage checked on 2026-07-09",
+  lastUpdated: "2026-07-11",
+  freshnessLabel: "codes, source status, and query-to-route coverage checked on 2026-07-11",
   keywords: [
     `${gameConfig.name}`,
     `${gameConfig.name} codes`,
@@ -105,20 +105,20 @@ export const heroMetrics: HeroMetric[] = [
 ];
 
 export const activeCodes: GameCode[] = [
-  { code: "HAZESEAS2026", reward: "The current public Trello Game Info codes card lists 10 Race Spins.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "RELEASE", reward: "The current public Trello Game Info codes card lists 1H x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "FREECASH", reward: "The current public Trello Game Info codes card lists 50k Cash.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "FREEGEMS", reward: "The current public Trello Game Info codes card lists 50 Gems.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "SUBSCRIBETOHAZEYT", reward: "The current public Trello Game Info codes card lists +50k Cash.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "Sub2Nikkolapz", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "Sub2BrosSiam", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "Sub2BadiTubes", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "Sub2BuilderboyTV", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "PATCH", reward: "The current public Trello Game Info codes card lists the code; guide sites still add reward details that need gameplay rechecks.", status: "Needs check", addedDate: "Board and guide checks updated 2026-07-09" },
-  { code: "OKUCHI", reward: "The current public Trello Game Info codes card lists 5 Race Spins.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "Sub2XenoTy", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "Sub2CaptainMaui", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-09" },
-  { code: "GROUPONLY", reward: "Guide sites still list 10K Cash, but this code did not appear on the current Haze Seas Game Info codes card and only showed up on older legacy board content.", status: "Unverified", addedDate: "Guide and legacy-board conflict checked 2026-07-09" }
+  { code: "HAZESEAS2026", reward: "The current public Trello Game Info codes card lists 10 Race Spins.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "RELEASE", reward: "The current public Trello Game Info codes card lists 1H x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "FREECASH", reward: "The current public Trello Game Info codes card lists 50k Cash.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "FREEGEMS", reward: "The current public Trello Game Info codes card lists 50 Gems.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "SUBSCRIBETOHAZEYT", reward: "The current public Trello Game Info codes card lists +50k Cash.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "Sub2Nikkolapz", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "Sub2BrosSiam", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "Sub2BadiTubes", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "Sub2BuilderboyTV", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "PATCH", reward: "The current public Trello Game Info codes card lists the code; guide sites still add reward details that need gameplay rechecks.", status: "Needs check", addedDate: "Board and guide checks updated 2026-07-11" },
+  { code: "OKUCHI", reward: "The current public Trello Game Info codes card lists 5 Race Spins.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "Sub2XenoTy", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "Sub2CaptainMaui", reward: "The current public Trello Game Info codes card lists 20M x2 EXP.", status: "Needs check", addedDate: "Public board checked 2026-07-11" },
+  { code: "GROUPONLY", reward: "Guide sites still list 10K Cash, but this code did not appear on the current Haze Seas Game Info codes card and only showed up on older legacy board content.", status: "Unverified", addedDate: "Guide and legacy-board conflict checked 2026-07-11" }
 ];
 
 export const tierPreview: TierPreviewItem[] = [

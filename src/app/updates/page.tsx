@@ -26,23 +26,23 @@ export const metadata: Metadata = {
 const statusCards = [
   {
     label: "Roblox updated timestamp",
-    value: "2026-07-06 14:26:07 UTC",
-    note: "Latest numeric snapshot captured from Roblox public metadata during the 2026-07-07 check, with the official Roblox page still surfacing the same Update 1 title and description cluster."
+    value: "2026-07-10 21:25:44 UTC",
+    note: "Fresh Roblox games API snapshot rechecked on 2026-07-11. The official page still shows the same DRAG HYBRID COUNTDOWN title cluster."
   },
   {
     label: "Current player count snapshot",
-    value: "16,824 playing",
-    note: "Latest numeric snapshot captured on 2026-07-07 from the Roblox games API."
+    value: "24,051 playing",
+    note: "Fresh Roblox games API snapshot rechecked on 2026-07-11."
   },
   {
     label: "Visit count snapshot",
-    value: "245,856,486 visits",
-    note: "Latest numeric snapshot captured on 2026-07-07. Recheck after the next official metadata pull."
+    value: "251,174,594 visits",
+    note: "Fresh Roblox games API snapshot rechecked on 2026-07-11."
   },
   {
     label: "Board freshness",
-    value: "2026-07-04 20:51:53 UTC",
-    note: "The public Haze Seas Official Trello JSON reported this as the latest visible board activity time when rechecked on 2026-07-07."
+    value: "2026-07-11 01:27:57 UTC",
+    note: "The public Haze Seas Official Trello JSON reported this as the latest visible board activity time when rechecked on 2026-07-11, even though the codes card itself still dates to 2026-07-04."
   }
 ];
 
@@ -71,7 +71,7 @@ export default function UpdatesPage() {
         <SectionHeader
           eyebrow="Official Roblox signals"
           title="Current source-of-record notes"
-          copy="These notes combine the latest confirmed Roblox metadata snapshot rechecked on 2026-07-07 with the official Roblox page wording rechecked the same day. They should outrank generic tracker copy when the two disagree."
+          copy="These notes combine the latest Roblox games API snapshot with the official Roblox page wording rechecked on 2026-07-11. They should outrank generic tracker copy when the two disagree."
         />
         <div className="mt-6 grid gap-4 lg:grid-cols-2">
           <article className="content-card">
@@ -81,6 +81,10 @@ export default function UpdatesPage() {
           <article className="content-card">
             <h2 className="text-2xl font-bold text-white">Current fruit list signal</h2>
             <p className="mt-3 text-sm leading-6 text-white/68">The same Roblox description currently lists 35 fruits, including Okuchi, Wolf, Mammoth, Leopard, Dragon, Dough, Buddha, Venom, Phoenix, and Soul. Those names feed the wiki and tier-list route watch but do not automatically prove exact rankings.</p>
+          </article>
+          <article className="content-card lg:col-span-2">
+            <h2 className="text-2xl font-bold text-white">What changed in the 2026-07-11 recheck</h2>
+            <p className="mt-3 text-sm leading-6 text-white/68">This run found a newer board-wide activity timestamp at 2026-07-11T01:27:57Z plus fresher Roblox API numbers, but it did not find a new public codes-card update or new official Roblox page wording. Fresh July 2026 Google and YouTube results still kept race tier list, sword tier list, and fighting style tier list demand active, so the source-watch route remains justified without publishing new definitive rankings.</p>
           </article>
         </div>
       </section>
@@ -110,7 +114,7 @@ export default function UpdatesPage() {
           <Link href="/tier-list" className="content-card">
             <span className="mini-label">Tier watch</span>
             <h2 className="mt-3 text-xl font-bold text-white">Okuchi and Dragon full-form watch</h2>
-            <p className="mt-2 text-sm leading-6 text-white/65">Fresh public board activity exposes Okuchi and Dragon full-form entity cards, but this run still keeps them on a source-watch basis instead of forcing new rankings.</p>
+            <p className="mt-2 text-sm leading-6 text-white/65">Fresh public board activity now also exposes newer Dragon, Fighting Styles V2, and Mace V2 card edits, but this run still keeps them on a source-watch basis instead of forcing new rankings.</p>
           </Link>
           <Link href="/tier-list-watch" className="content-card">
             <span className="mini-label">Forced expansion</span>
@@ -119,8 +123,8 @@ export default function UpdatesPage() {
           </Link>
           <Link href="/trello" className="content-card">
             <span className="mini-label">Source status</span>
-            <h2 className="mt-3 text-xl font-bold text-white">Verified Trello board plus direct Discord recheck</h2>
-            <p className="mt-2 text-sm leading-6 text-white/65">The Trello route now records both the public official board and the directly revalidated Discord invite it links to.</p>
+            <h2 className="mt-3 text-xl font-bold text-white">Verified Trello board plus Discord source note</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">The Trello route now records both the public official board and the current board-linked Discord invite status it points to.</p>
           </Link>
         </div>
       </section>

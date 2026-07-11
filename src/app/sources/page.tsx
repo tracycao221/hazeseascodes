@@ -61,6 +61,31 @@ export default function SourcesPage() {
           })}
         </div>
       </section>
+
+      <section className="mt-10">
+        <SectionHeader
+          eyebrow="2026-07-11 recheck"
+          title="Fresh public signals used in this run"
+          copy="This run kept official links ahead of community pages, then used fresh public search and video results only as demand and terminology signals."
+        />
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          <article className="content-card">
+            <span className="mini-label">Official + structured</span>
+            <h2 className="mt-3 text-xl font-bold text-white">Roblox page and Trello board</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">The known Roblox game URL still surfaced publicly, and the public Trello JSON still showed the current code card plus Sea 3, merchant, race, sword, and entity coverage while newer non-code cards moved the board-wide activity timestamp forward.</p>
+          </article>
+          <article className="content-card">
+            <span className="mini-label">SERP competitors</span>
+            <h2 className="mt-3 text-xl font-bold text-white">Codes and tier-list freshness</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">Fresh July 2026 results still surfaced current Haze Seas codes pages and public tier-list pages from Sportskeeda, Destructoid, and other guide sites, which supported keeping the watch routes and conflict labels in place.</p>
+          </article>
+          <article className="content-card">
+            <span className="mini-label">YouTube demand</span>
+            <h2 className="mt-3 text-xl font-bold text-white">Race, sword, and style intent</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">Recent creator-video search results continued to surface race tier list, sword tier list, and related fruit/meta phrasing, but not enough official evidence to convert those exact-intent terms into hard rankings.</p>
+          </article>
+        </div>
+      </section>
     </main>
   );
 }

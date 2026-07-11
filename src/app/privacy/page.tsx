@@ -59,6 +59,11 @@ export default function PrivacyPage() {
             storage, or similar technology to deliver or measure ads, and those partners operate under
             their own privacy terms in addition to this site policy.
           </p>
+          <p className="mt-2 leading-7 text-white/68">
+            This run did not verify an active Adsterra page script on the live site. If Adsterra is added
+            or restored later, its scripts, cookies, and related disclosures should be documented here
+            alongside any Effective CPM Network usage instead of being implied silently.
+          </p>
         </article>
 
         <article className="content-card">

@@ -1,8 +1,8 @@
 {
   "gameSlug": "haze-seas",
   "status": "pass",
-  "checkedAt": "2026-07-09T00:00:00.000Z",
-  "checkedDate": "2026-07-09",
+  "checkedAt": "2026-07-11T00:00:00.000Z",
+  "checkedDate": "2026-07-11",
   "checks": {
     "requiredRoutes": [
       "/",
@@ -24,8 +24,8 @@
   },
   "notes": [
     "Codex content updates must use source-backed keyword-to-route decisions before adding or changing pages.",
-    "This 2026-07-09 refresh rechecked the public Trello board, the official Roblox page, and live query families before route-level edits.",
-    "The board remained public with 13 current code listings and a latest activity timestamp of 2026-07-04T20:51:53.907Z.",
+    "This 2026-07-11 refresh rechecked the public Trello board, the official Roblox page, the Roblox games API snapshot, and live query families before route-level edits.",
+    "The board remained public with 13 current code listings on the codes card, while board-wide activity moved to 2026-07-11T01:27:57.054Z because newer non-code cards were updated.",
     "No new route was needed; codes, guide, wiki, and Trello intent were strengthened on their existing canonical pages."
   ]
 }

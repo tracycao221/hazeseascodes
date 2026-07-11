@@ -25,18 +25,18 @@ export const metadata: Metadata = {
 const watchCards = [
   {
     title: "Haze Seas race tier list",
-    source: "Fresh July 2026 Google and YouTube query surfaces rechecked on 2026-07-07",
-    body: "Exact race-tier-list intent is still live in current public search and video results, but official Roblox and Trello surfaces do not publish a confirmed race order. Treat outside rankings as source-reported until repeated public coverage converges."
+    source: "Fresh July 2026 Google and YouTube query surfaces rechecked on 2026-07-11",
+    body: "Exact race-tier-list intent is still live in current public search and video results, including fresh Sportskeeda and creator-video coverage, but official Roblox and Trello surfaces do not publish a confirmed race order. Treat outside rankings as source-reported until repeated public coverage converges."
   },
   {
     title: "Haze Seas sword tier list",
-    source: "Fresh July 2026 Google query surfaces plus public board weapon-system coverage rechecked on 2026-07-07",
-    body: "Sword-tier-list wording remains active, and the public board confirms sword-related progression systems exist, but this site is not publishing a fixed sword ranking without cleaner cross-source support."
+    source: "Fresh July 2026 Google query surfaces plus public board weapon-system coverage rechecked on 2026-07-11",
+    body: "Sword-tier-list wording remains active in fresh public search coverage, including Destructoid-style ranking pages, and the public board confirms sword-related progression systems exist. This site is still not publishing a fixed sword ranking without cleaner cross-source support."
   },
   {
     title: "Haze Seas fighting style tier list",
-    source: "Fresh July 2026 Google query surfaces rechecked on 2026-07-07",
-    body: "Fighting-style tier-list demand is visible enough for a dedicated watch route, but current public evidence is still stronger for exact-intent monitoring than for a final ranked order."
+    source: "Fresh July 2026 Google query surfaces rechecked on 2026-07-11",
+    body: "Fighting-style tier-list demand is visible enough for a dedicated watch route, with current results still surfacing public ranking pages on 2026-07-10, but the evidence is stronger for exact-intent monitoring than for a final ranked order."
   }
 ];
 
@@ -54,13 +54,13 @@ export default function TierListWatchPage() {
       <section className="mt-8 grid gap-4 lg:grid-cols-3">
         <article className="content-card">
           <span className="mini-label">Checked date</span>
-          <h2 className="mt-3 text-xl font-bold text-white">2026-07-07</h2>
+          <h2 className="mt-3 text-xl font-bold text-white">2026-07-11</h2>
           <p className="mt-2 text-sm leading-6 text-white/66">This route stayed justified after exact query families remained visible in fresh July 2026 search and YouTube surfaces.</p>
         </article>
         <article className="content-card">
           <span className="mini-label">Official anchor</span>
-          <h2 className="mt-3 text-xl font-bold text-white">Roblox metadata updated 2026-07-06</h2>
-          <p className="mt-2 text-sm leading-6 text-white/66">The official Roblox API still confirms the live game identity and current progression surface, but not a creator-approved race, sword, or style ranking.</p>
+          <h2 className="mt-3 text-xl font-bold text-white">Roblox metadata baseline 2026-07-06</h2>
+          <p className="mt-2 text-sm leading-6 text-white/66">The last recorded direct Roblox metadata snapshot still confirms the live game identity and current progression surface, but not a creator-approved race, sword, or style ranking.</p>
         </article>
         <article className="content-card">
           <span className="mini-label">Publication state</span>

@@ -11,7 +11,7 @@ import {
   AdsterraStickyRail
 } from "@/components/ads";
 
-const CLEAN_ROUTE_PREFIXES = ["/contact", "/disclosure", "/privacy", "/sources"];
+const CLEAN_ROUTE_PREFIXES = ["/about", "/contact", "/disclosure", "/privacy", "/sources", "/terms"];
 
 function isCleanRoute(pathname: string) {
   return CLEAN_ROUTE_PREFIXES.some((route) => pathname === route || pathname.startsWith(`${route}/`));

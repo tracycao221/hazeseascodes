@@ -6,18 +6,18 @@ import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
 export const metadata: Metadata = {
   title: { absolute: `${siteConfig.gameName} Codes: 13 Trello Codes Checked` },
-  description: `Check 13 Trello-listed ${siteConfig.gameName} codes, rewards, redemption help, one disputed code claim, and source status verified July 9, 2026.`,
+  description: `Check 13 Trello-listed ${siteConfig.gameName} codes, rewards, redemption help, one disputed code claim, and source status verified July 11, 2026.`,
   alternates: { canonical: `${siteConfig.domain}/codes` },
   openGraph: {
     title: `${siteConfig.gameName} Codes: 13 Trello Codes Checked`,
-    description: `Check 13 Trello-listed ${siteConfig.gameName} codes, rewards, redemption help, one disputed code claim, and source status verified July 9, 2026.`,
+    description: `Check 13 Trello-listed ${siteConfig.gameName} codes, rewards, redemption help, one disputed code claim, and source status verified July 11, 2026.`,
     url: `${siteConfig.domain}/codes`,
     images: [`${siteConfig.domain}/codes/opengraph-image`]
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.gameName} Codes: 13 Trello Codes Checked`,
-    description: `Check 13 Trello-listed ${siteConfig.gameName} codes, rewards, redemption help, one disputed code claim, and source status verified July 9, 2026.`,
+    description: `Check 13 Trello-listed ${siteConfig.gameName} codes, rewards, redemption help, one disputed code claim, and source status verified July 11, 2026.`,
     images: [`${siteConfig.domain}/codes/opengraph-image`]
   }
 };
@@ -47,15 +47,15 @@ export default function CodesPage() {
         </article>
         <article className="content-card">
           <span className="mini-label">Last checked</span>
-          <h2 className="mt-3 text-2xl font-bold text-white">July 9, 2026</h2>
-          <p className="mt-2 text-sm leading-6 text-white/66">The board still reports its latest activity on July 4, 2026.</p>
+          <h2 className="mt-3 text-2xl font-bold text-white">July 11, 2026</h2>
+          <p className="mt-2 text-sm leading-6 text-white/66">The codes card still reflects the same July 4, 2026 code set even though the board itself had newer non-code activity on July 10-11.</p>
         </article>
       </section>
       <section className="mt-10">
         <SectionHeader
           eyebrow="Active list"
           title="Current best-known codes"
-          copy="This list was rechecked on 2026-07-09 from the public Haze Seas Official Trello board. Only the current Haze Seas Game Info codes card counts as board evidence when older carryover cards conflict."
+          copy="This list was rechecked on 2026-07-11 from the public Haze Seas Official Trello board. Only the current Haze Seas Game Info codes card counts as board evidence when older carryover cards conflict."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {activeCodes.map((code) => (
@@ -88,7 +88,7 @@ export default function CodesPage() {
           <SectionHeader
             eyebrow="Verification"
             title="Code freshness policy"
-            copy="Codes should show the date checked, source type, and conflict notes when sources disagree. On 2026-07-09, the current Haze Seas Game Info codes card still supported HAZESEAS2026, PATCH, OKUCHI, and multiple creator codes, while GROUPONLY remained a guide-only and legacy-board conflict."
+            copy="Codes should show the date checked, source type, and conflict notes when sources disagree. On 2026-07-11, the current Haze Seas Game Info codes card still supported HAZESEAS2026, PATCH, OKUCHI, and multiple creator codes, while GROUPONLY remained a guide-only and legacy-board conflict."
           />
         </article>
       </section>

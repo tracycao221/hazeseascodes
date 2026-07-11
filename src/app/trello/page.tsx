@@ -28,7 +28,7 @@ const statusRows = [
     label: "Official Roblox page",
     href: gameConfig.dataSources.officialGameUrl,
     status: "Primary source",
-    note: "The official Roblox page and current RELEASE + UPD 1 title were rechecked on 2026-07-09, while the last recorded direct Roblox metadata snapshot remains the numeric baseline for update timing and counts."
+    note: "The official Roblox page and live Roblox games API were rechecked on 2026-07-11, with the page still showing the current DRAG HYBRID COUNTDOWN title cluster."
   },
   {
     label: "Haze Studios Roblox group",
@@ -39,14 +39,14 @@ const statusRows = [
   {
     label: "Discord",
     href: gameConfig.dataSources.discord ?? "#",
-    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Board-linked invite still current" : "Needs verification",
-    note: "The public Haze Seas Official Trello board still linked to discord.gg/hazeseas when rechecked on 2026-07-09. Treat the board as the verification source for this invite."
+    status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Board-linked invite resolves" : "Needs verification",
+    note: "The public Haze Seas Official Trello board still linked to discord.gg/hazeseas when rechecked on 2026-07-11, and a direct redirect check from this environment still resolved to discord.com/invite/hazeseas."
   },
   {
     label: "Trello",
     href: gameConfig.dataSources.trello ?? "#",
     status: gameConfig.dataSources.trello && gameConfig.dataSources.trello !== "#" ? "Verified public board" : "No official board verified",
-    note: "Public Trello JSON confirmed again on 2026-07-09 that the Haze Seas Official Trello board is live and public, with 13 current code listings plus Sea 3, materials, dragon-skin, race, sword, and entity cards. The board's latest activity remains 2026-07-04 and it still contains older Haze Piece and Project New World carryover cards."
+    note: "Public Trello JSON confirmed again on 2026-07-11 that the Haze Seas Official Trello board is live and public, with 13 current code listings plus Sea 3, materials, dragon-skin, race, sword, and entity cards. The codes card still dates to 2026-07-04, but board-wide activity moved to 2026-07-11 because cards such as Dragon, Fighting Styles V2, and Mace V2 were updated."
   },
   {
     label: "Wiki",
@@ -70,7 +70,7 @@ export default function TrelloStatusPage() {
         <SectionHeader
           eyebrow="Official links"
           title="Source status"
-          copy="This page was refreshed on 2026-07-09. Verified links are separated from community or guide-only claims so players can see what is official, what is public but indirect, and what is still unverified."
+          copy="This page was refreshed on 2026-07-11. Verified links are separated from community or guide-only claims so players can see what is official, what is public but indirect, and what is still unverified."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {statusRows.map((item) => {
